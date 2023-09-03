@@ -6,20 +6,37 @@ public class LerpHorizontal : MonoBehaviour
 {
     private Vector3 targetPosition;
     private bool isMoving = false;
-    private float moveSpeed = 20f; // Constant movement speed
+    private float moveSpeed = 30f; // Constant movement speed
 
-    void Update()
+    // These variables are set to low to make sure they trigger
+    private float boundaryLeft = 8f;  // Max Z position
+    private float  boundaryRight= -8f; // Min Z position
+    
+    private bool lerpLeft = true;
+    private bool lerpRight = true;
+
+    public PlayerController playerController;
+    public bool isOnGround;
+    
+
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.A) && !isMoving)
+        playerController = GetComponent<PlayerController>();
+    }
+
+    void LateUpdate()
+    {
+        BoundaryCheck();
+
+        if (Input.GetKeyDown(KeyCode.A) && !isMoving && playerController.isOnGround && !playerController.gameOver)
         {   
             MoveLeft();
-            System.Console.WriteLine("isMoving = " + isMoving);
+            Debug.Log("isMoving = " + isMoving);
         }
-        else if (Input.GetKeyDown(KeyCode.D) && !isMoving)
+        else if (Input.GetKeyDown(KeyCode.D) && !isMoving && playerController.isOnGround && !playerController.gameOver)
         {
             MoveRight();
-            System.Console.WriteLine("isMoving = " + isMoving);
-
+            Debug.Log("isMoving = " + isMoving);
         }
 
         if (isMoving)
@@ -30,7 +47,7 @@ public class LerpHorizontal : MonoBehaviour
             if (transform.position == targetPosition)
             {
                 isMoving = false;
-                System.Console.WriteLine("isMoving = " + isMoving);
+                Debug.Log("isMoving = " + isMoving);
 
             }
         }
@@ -38,13 +55,43 @@ public class LerpHorizontal : MonoBehaviour
 
     private void MoveLeft()
     {
-        targetPosition = transform.position + new Vector3(0f, 0f, 10f);
-        isMoving = true;
+        if(lerpLeft)
+        {
+            targetPosition = transform.position + new Vector3(0f, 0f, 10f);
+            isMoving = true;
+        }
     }
 
     private void MoveRight()
     {
-        targetPosition = transform.position + new Vector3(0f, 0f, -10f);
-        isMoving = true;
+        if(lerpRight)
+        {
+            targetPosition = transform.position + new Vector3(0f, 0f, -10f);
+            isMoving = true;
+        }
     }
+
+    // if Player Transform Z position is greater/less than boundaries, set position to boundaries
+    public void BoundaryCheck()
+    {
+        
+        if(transform.position.z >= boundaryLeft)
+        {
+            lerpLeft = false;
+        }
+        else
+        {
+            lerpLeft = true;
+        }
+
+        if(transform.position.z <= boundaryRight)
+        {
+            lerpRight = false;
+        }
+        else
+        {
+            lerpRight = true;
+        }
+    }
+
 }

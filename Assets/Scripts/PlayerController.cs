@@ -5,22 +5,27 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // Player RigidBody
-    private Rigidbody playerRB;
-    public float jumpForce = 20;
-    public float gravityModifier;
-    
-    
+    public Rigidbody playerRb;
+    public float jumpForce = 50f;
+    public float gravityModifier = 20f;
+
     // Player Animator
     private Animator playerAnim;
+    
     // Player AudioSource
     private AudioSource playerAudio;
     
-    
-    public bool isOnGround = true;
     public bool gameOver;
+
+    public bool isOnGround = true;
+    public bool secondJump;
+    private bool coolTime;
+    public float coolTimeLength = 0.2f;
 
     public ParticleSystem explosionParticle;
     public ParticleSystem dirtParticle;
+    public ParticleSystem jumpParticle;
+    public Vector3 jumpParticleSpawnPos;
 
     public AudioClip jumpSound;
     public AudioClip crashSound;
@@ -30,16 +35,54 @@ public class PlayerController : MonoBehaviour
     {
         playerAudio = GetComponent<AudioSource>();
         playerAnim = GetComponent<Animator>();
-        playerRB = GetComponent<Rigidbody>();
+        playerRb = GetComponent<Rigidbody>();
         Physics.gravity *= gravityModifier;
 
     }
 
+
     // Update is called once per frame
     void LateUpdate()
     {
-        JumpScript();
-        // PlayerBoundary();
+        // JumpScript();
+        Jump1();
+        Jump2();
+    }
+
+    public void Jump1()
+    {
+        if(Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver) //gameOver != true
+        {
+            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isOnGround = false;
+            secondJump = true;
+            coolTime = true;
+            Invoke("CoolDown", coolTimeLength);
+
+
+            playerAnim.SetTrigger("Jump_trig");
+            dirtParticle.Stop();
+            
+            jumpParticleSpawnPos = transform.position;
+            Instantiate(jumpParticle, jumpParticleSpawnPos, jumpParticle.transform.rotation);
+            playerAudio.PlayOneShot(jumpSound, 1.0f);
+        }
+    }
+
+    public void Jump2()
+    {
+        if(Input.GetKeyDown(KeyCode.Space) && secondJump && !coolTime && !gameOver) //gameOver != true
+        {
+            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            playerAnim.SetTrigger("Jump_trig");
+            secondJump = false;
+
+            jumpParticleSpawnPos = transform.position;
+            Instantiate(jumpParticle, jumpParticleSpawnPos, jumpParticle.transform.rotation);
+            playerAudio.PlayOneShot(jumpSound, 1.0f);
+
+            
+        }
     }
 
     private void OnCollisionEnter(Collision other)
@@ -63,41 +106,12 @@ public class PlayerController : MonoBehaviour
             explosionParticle.Play();
             dirtParticle.Stop();
         }
-
     }
 
-    // Jump Script - Activates when player presses SpaceBar
-    // Set to run in Update Method
-    // Controls
-    //  - Jump Audio Sounds
-    //  - Dirt Particle
-    //  - onGround Bool
-    public void JumpScript()
+    void CoolDown()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)
-        {
-            playerAudio.PlayOneShot(jumpSound, 1.0f);
-            playerRB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isOnGround = false;
-
-            playerAnim.SetTrigger("Jump_trig");
-            dirtParticle.Stop();
-        }
+        coolTime = false;
     }
-
-        // if Player Transform Z position is greater/less than boundaries, set position to boundaries
-    public void PlayerBoundary()
-    {
-        // LeftBoundary
-        if(transform.position.z >= 10)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, 10);
-        }
-        // RightBoundary
-        if(transform.position.z <= -10)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, -10);
-        }
-    }
+    
 }
-
+    
