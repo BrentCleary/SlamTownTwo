@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
     // Spawn Manager Variables
     public GameObject obstaclePrefab;
     // Spawn Position
-    private Vector3 spawnPos = new Vector3(25, 0, 0);
+    private Vector3 spawnPos = new Vector3(50, 0, 0);
     // SpawnObstacle Variables
     private float startDelay = 1f;
     private float repeatRate = 1f;

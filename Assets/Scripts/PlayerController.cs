@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // Player RigidBody
     private Rigidbody playerRB;
-    private Animator playerAnim;
-    private AudioSource playerAudio;
     public float jumpForce = 20;
     public float gravityModifier;
+    
+    
+    // Player Animator
+    private Animator playerAnim;
+    // Player AudioSource
+    private AudioSource playerAudio;
+    
+    
     public bool isOnGround = true;
-
     public bool gameOver;
 
     public ParticleSystem explosionParticle;
@@ -30,22 +36,14 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)
-        {
-            playerAudio.PlayOneShot(jumpSound, 1.0f);
-            playerRB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isOnGround = false;
-
-            playerAnim.SetTrigger("Jump_trig");
-            dirtParticle.Stop();
-        }
+        JumpScript();
+        // PlayerBoundary();
     }
 
     private void OnCollisionEnter(Collision other)
     {
-
 
         if(other.gameObject.CompareTag("Ground"))
         {
@@ -66,6 +64,40 @@ public class PlayerController : MonoBehaviour
             dirtParticle.Stop();
         }
 
+    }
+
+    // Jump Script - Activates when player presses SpaceBar
+    // Set to run in Update Method
+    // Controls
+    //  - Jump Audio Sounds
+    //  - Dirt Particle
+    //  - onGround Bool
+    public void JumpScript()
+    {
+        if(Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)
+        {
+            playerAudio.PlayOneShot(jumpSound, 1.0f);
+            playerRB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isOnGround = false;
+
+            playerAnim.SetTrigger("Jump_trig");
+            dirtParticle.Stop();
+        }
+    }
+
+        // if Player Transform Z position is greater/less than boundaries, set position to boundaries
+    public void PlayerBoundary()
+    {
+        // LeftBoundary
+        if(transform.position.z >= 10)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, 10);
+        }
+        // RightBoundary
+        if(transform.position.z <= -10)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+        }
     }
 }
 
