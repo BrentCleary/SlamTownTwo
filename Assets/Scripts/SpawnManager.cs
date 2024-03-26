@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,6 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     // Spawn Manager Variables
-    public GameObject obstaclePrefab;
     public GameObject[] obstaclePrefabs;
 
     // Spawn Position
@@ -15,9 +15,6 @@ public class SpawnManager : MonoBehaviour
     private float startDelay = 1f;
     private float repeatRate = 1f;
     private PlayerController playerControllerScript;
-
-
-
 
 
     // Start is called before the first frame update
@@ -38,12 +35,18 @@ public class SpawnManager : MonoBehaviour
         // Detects gameOver variable in PlayerController
         // Only active while gameOver is false
         
-        int obstacleIndex = Random.Range(0, obstaclePrefabs.Length);
+        int obstacleIndex = UnityEngine.Random.Range(0, obstaclePrefabs.Length);
 
-        if(!playerControllerScript.gameOver)
+        if(!playerControllerScript.gameOver != false)
         {
             Instantiate(obstaclePrefabs[obstacleIndex], spawnPos, obstaclePrefabs[obstacleIndex].transform.rotation);
+                    Debug.Log("Spawning");
         }
+    }
+
+    void DebugCheck()
+    {
+        Debug.Log("Spawning");
     }
 
 }
