@@ -359,6 +359,7 @@
 "Assets/Scripts/CameraFollow.cs"
 "Assets/Scripts/DestroyObject.cs"
 "Assets/Scripts/LerpHorizontal.cs"
+"Assets/Scripts/MooseAnimations.cs"
 "Assets/Scripts/MoveLeft.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/RepeatBackground.cs"

@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     // Triggers
     public bool gameOver;
+    public bool mooseCollision = false;
     public bool isOnGround = true;
     public bool secondJump;
     private bool coolTime;
@@ -123,6 +124,7 @@ public class PlayerController : MonoBehaviour
         {
             // Triggers
             gameOver = true;
+            mooseCollision = true;
             Debug.Log("Hit Animal");
 
             // Animations
