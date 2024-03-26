@@ -6,8 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     // Player RigidBody
     public Rigidbody playerRb;
-    public float jumpForce = 50f;
+    public float jumpForce = 700f;
     public float gravityModifier = 20f;
+    private float animalCollision = 2000f;
 
     // Player Animator
     private Animator playerAnimator;
@@ -51,9 +52,12 @@ public class PlayerController : MonoBehaviour
 
     public void Jump1()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver) //gameOver != true
+        if(Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)
         {
+            // Movement
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+
+            // Triggers
             isOnGround = false;
             secondJump = true;
             coolTime = true;
@@ -62,7 +66,6 @@ public class PlayerController : MonoBehaviour
             // Animations
             playerAnimator.SetTrigger("Jump_trig");
             dirtParticle.Stop();
-
             jumpParticleSpawnPos = transform.position;
 
             Instantiate(jumpParticle, jumpParticleSpawnPos, jumpParticle.transform.rotation);
@@ -73,7 +76,7 @@ public class PlayerController : MonoBehaviour
 
     public void Jump2()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && secondJump && !coolTime && !gameOver) //gameOver != true
+        if(Input.GetKeyDown(KeyCode.Space) && secondJump && !coolTime && !gameOver)
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             playerAnimator.SetTrigger("Jump_trig");
@@ -88,28 +91,53 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        // Ground
         if(other.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
             dirtParticle.Play();
         }
-        else if(other.gameObject.CompareTag("Obstacle"))
-        {
-            // Triggers
-            gameOver = true;
-            Debug.Log("Game Over");
 
+        // Obstacle
+        if(other.gameObject.CompareTag("Obstacle"))
+        {
             // Animations
+            playerRb.AddForce(Vector3.left * animalCollision, ForceMode.Impulse);
             playerAnimator.SetBool("Death_b", true);
             playerAnimator.SetInteger("DeathType_int", 1);
+
             // Particles
             explosionParticle.Play();
             dirtParticle.Stop();
         
             // Sound
             playerAudio.PlayOneShot(crashSound, 1.0f);
-
+            
+            // Triggers
+            gameOver = true;
+            Debug.Log("Game Over");
         }
+
+        // Animal
+        if (other.gameObject.CompareTag("Animal"))
+        {
+            // Triggers
+            gameOver = true;
+            Debug.Log("Hit Animal");
+
+            // Animations
+            playerRb.AddForce(Vector3.left * animalCollision, ForceMode.Impulse);
+            playerAnimator.SetBool("Death_b", true);
+            playerAnimator.SetInteger("DeathType_int", 1);
+
+            // Particles
+            explosionParticle.Play();
+            dirtParticle.Stop();
+
+            // Sound
+            playerAudio.PlayOneShot(crashSound, 1.0f);
+        }
+
     }
 
     void CoolDown()

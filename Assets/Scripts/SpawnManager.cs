@@ -37,7 +37,7 @@ public class SpawnManager : MonoBehaviour
         
         int obstacleIndex = UnityEngine.Random.Range(0, obstaclePrefabs.Length);
 
-        if(!playerControllerScript.gameOver != false)
+        if(playerControllerScript.gameOver == false)
         {
             Instantiate(obstaclePrefabs[obstacleIndex], spawnPos, obstaclePrefabs[obstacleIndex].transform.rotation);
                     Debug.Log("Spawning");
