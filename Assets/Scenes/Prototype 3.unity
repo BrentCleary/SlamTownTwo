@@ -146,6 +146,7 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: 08ab7053d586c458db3774d33c141a4b, type: 3}
   crashSound: {fileID: 8300000, guid: 913d6445ee8cc4152a9c18da590ee203, type: 3}
   gameOver: 0
+  mooseCollision: 0
   isOnGround: 0
   secondJump: 0
   coolTimeLength: 0.2
