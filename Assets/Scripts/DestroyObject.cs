@@ -4,25 +4,18 @@ using UnityEngine;
 
 public class DestroyObject : MonoBehaviour
 {
-
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.transform.position.x < -40)
+        if(gameObject.transform.position.x < -20 )
         {
-            DestroyGameObject();
+            Destroy(gameObject);
         }
     }
-
-    void DestroyGameObject()
-    {
-        Destroy(gameObject);
-    }
-
 }
