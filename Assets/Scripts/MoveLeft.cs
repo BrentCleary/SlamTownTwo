@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class MoveLeft : MonoBehaviour
 {
-    private float speed = 30;
+    private float speed = 20f;
+    public float distance;
+
     private PlayerController playerControllerScript;
 
     private float leftBound = -10;
@@ -16,11 +18,12 @@ public class MoveLeft : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         if(playerControllerScript.gameOver == false)
         {
-            transform.Translate(Vector3.left * Time.deltaTime * speed);
+            distance = speed * Time.deltaTime;
+            transform.Translate(Vector3.left * distance);
         }
 
         if(transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
