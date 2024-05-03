@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveLeft : MonoBehaviour
 {
-    private float speed = 20f;
+    public float speed = 20f;
     public float distance;
 
     private PlayerController playerControllerScript;
@@ -20,6 +20,18 @@ public class MoveLeft : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
+        // detect boost active on jump and increase speed, then decrement over time
+        if(playerControllerScript.boost == true)
+        {
+            speed = 30f;
+
+            if(speed > 20f)
+            {
+                speed -= 0.5f * Time.deltaTime;
+                playerControllerScript.boost = false;
+            }
+        }
+
         if(playerControllerScript.gameOver == false)
         {
             distance = speed * Time.deltaTime;
@@ -31,4 +43,5 @@ public class MoveLeft : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }

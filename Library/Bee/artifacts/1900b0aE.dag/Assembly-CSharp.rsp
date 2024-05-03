@@ -358,6 +358,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/CameraFollow.cs"
 "Assets/Scripts/DestroyObject.cs"
+"Assets/Scripts/GroundControllerScript.cs"
 "Assets/Scripts/LerpHorizontal.cs"
 "Assets/Scripts/MooseAnimations.cs"
 "Assets/Scripts/MoveLeft.cs"

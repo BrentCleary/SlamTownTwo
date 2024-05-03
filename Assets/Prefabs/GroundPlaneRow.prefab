@@ -715,9 +715,11 @@ GameObject:
   - component: {fileID: 3817624213543424019}
   - component: {fileID: 1325717540320881146}
   - component: {fileID: 8160645321221240546}
+  - component: {fileID: -7237770316824226235}
+  - component: {fileID: 340519830205554688}
   m_Layer: 0
   m_Name: GroundPlaneRow
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -763,3 +765,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c022585bb1ccca64eaa0cbb8674b4b01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distance: 0
+--- !u!65 &-7237770316824226235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8506548226062844840}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20, y: 0, z: 30}
+  m_Center: {x: 5, y: 0, z: 0}
+--- !u!114 &340519830205554688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8506548226062844840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a43492d973d3f314897a2758a719c6ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveLeftScript: {fileID: 0}
+  detectCollision: 0

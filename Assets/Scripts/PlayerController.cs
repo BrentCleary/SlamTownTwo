@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip crashSound;
 
     // Triggers
+    public bool boost;
     public bool gameOver;
     public bool mooseCollision = false;
     public bool isOnGround = true;
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
         playerRb = GetComponent<Rigidbody>();
         Physics.gravity *= gravityModifier;
+        
     }
 
 
@@ -49,6 +51,8 @@ public class PlayerController : MonoBehaviour
         // JumpScript();
         Jump1();
         Jump2();
+
+        
     }
 
     public void Jump1()
@@ -59,6 +63,7 @@ public class PlayerController : MonoBehaviour
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
 
             // Triggers
+            boost = true;
             isOnGround = false;
             secondJump = true;
             coolTime = true;

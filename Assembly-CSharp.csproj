@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\LerpHorizontal.cs" />
+     <Compile Include="Assets\Scripts\GroundControllerScript.cs" />
      <Compile Include="Assets\Scripts\MooseAnimations.cs" />
      <Compile Include="Assets\Scripts\MoveLeft.cs" />
      <Compile Include="Assets\Scripts\RepeatBackground.cs" />
