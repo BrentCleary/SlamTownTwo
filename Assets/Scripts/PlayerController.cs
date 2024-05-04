@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip crashSound;
 
     // Triggers
-    public bool boost;
+    public bool boostOn;
     public bool gameOver;
     public bool mooseCollision = false;
     public bool isOnGround = true;
@@ -32,6 +32,8 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem dirtParticle;
     public ParticleSystem jumpParticle;
     public Vector3 jumpParticleSpawnPos;
+    private float jumpParticleOffset_X_ = 4.3f;
+    private float jumpParticleOffset_Y_ = 2f;
 
     
     // Start is called before the first frame update
@@ -46,12 +48,12 @@ public class PlayerController : MonoBehaviour
 
 
     // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
-        // JumpScript();
+        
         Jump1();
         Jump2();
-
+        Boost();
         
     }
 
@@ -63,7 +65,7 @@ public class PlayerController : MonoBehaviour
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
 
             // Triggers
-            boost = true;
+            boostOn = true;
             isOnGround = false;
             secondJump = true;
             coolTime = true;
@@ -72,9 +74,8 @@ public class PlayerController : MonoBehaviour
             // Animations
             playerAnimator.SetTrigger("Jump_trig");
             dirtParticle.Stop();
-            jumpParticleSpawnPos = transform.position;
 
-            Instantiate(jumpParticle, jumpParticleSpawnPos, jumpParticle.transform.rotation);
+            Instantiate(jumpParticle, JumpParticlePostion(), jumpParticle.transform.rotation);
             playerAudio.PlayOneShot(jumpSound, 1.0f);
             
         }
@@ -88,8 +89,7 @@ public class PlayerController : MonoBehaviour
             playerAnimator.SetTrigger("Jump_trig");
             secondJump = false;
 
-            jumpParticleSpawnPos = transform.position;
-            Instantiate(jumpParticle, jumpParticleSpawnPos, jumpParticle.transform.rotation);
+            Instantiate(jumpParticle, JumpParticlePostion(), jumpParticle.transform.rotation);
             playerAudio.PlayOneShot(jumpSound, 1.0f);
             
         }
@@ -152,5 +152,25 @@ public class PlayerController : MonoBehaviour
         coolTime = false;
     }
     
+    void Boost()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            boostOn = true;
+        }
+        else
+        {
+            boostOn = false;
+        }
+    }
+
+    public Vector3 JumpParticlePostion()
+    {
+        // Spawn of jump explosions
+        return jumpParticleSpawnPos = new Vector3(playerRb.transform.position.x + jumpParticleOffset_X_, 
+                                                  playerRb.transform.position.y + jumpParticleOffset_Y_,
+                                                  playerRb.transform.position.z);
+    }
+
 }
     

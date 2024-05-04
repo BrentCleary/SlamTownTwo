@@ -15,7 +15,7 @@ public class SpawnManager : MonoBehaviour
 
     // SpawnObstacle Variables
     private float startDelay = 1.5f;
-    private float repeatRate = 1f;
+    private float repeatRate = .5f;
     private PlayerController playerControllerScript;
 
 

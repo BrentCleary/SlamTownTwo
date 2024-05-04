@@ -4,43 +4,57 @@ using UnityEngine;
 
 public class MoveLeft : MonoBehaviour
 {
-    public float speed = 20f;
-    public float distance;
+    public float speed;
+    private float normalSpeed = 40;
+    private float boostSpeed = 60;
+    private float dragGroundValue = 30f;
+    private float dragAirValue = 5f;
 
+    private ParticleSystem jumpParticle;
     private PlayerController playerControllerScript;
 
-    private float leftBound = -10;
-
-    // Start is called before the first frame update
     void Start()
     {
+        // This script find the GameObject by tag "Player", and gets the PlayerController class from the object,
+        // and assigns it to the private variable playerControllerScript, or type ?PlayerController?
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
+        jumpParticle = playerControllerScript.jumpParticle;
+        speed = normalSpeed;
     }
 
-    // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
-        // detect boost active on jump and increase speed, then decrement over time
-        if(playerControllerScript.boost == true)
-        {
-            speed = 30f;
-
-            if(speed > 20f)
-            {
-                speed -= 0.5f * Time.deltaTime;
-                playerControllerScript.boost = false;
-            }
-        }
-
         if(playerControllerScript.gameOver == false)
-        {
-            distance = speed * Time.deltaTime;
-            transform.Translate(Vector3.left * distance);
+        { 
+            transform.Translate(Vector3.left * Time.deltaTime * speed);
         }
 
-        if(transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
+        ChangeSpeedBoost();
+        Drag();
+
+
+    }
+
+
+    // Changes speed to 60 if boost bool is true in PlayerController.scr
+    void ChangeSpeedBoost()
+    {
+        if(playerControllerScript.boostOn == true)
         {
-            Destroy(gameObject);
+            speed = boostSpeed;
+        }
+    }
+
+    void Drag()
+    {
+        if(speed > normalSpeed && playerControllerScript.isOnGround == true)
+        {
+            speed -= dragGroundValue * Time.time * Time.deltaTime;
+        }
+
+        if(speed > normalSpeed && playerControllerScript.isOnGround == false)
+        {
+            speed -= dragAirValue * Time.time * Time.deltaTime;
         }
     }
 
