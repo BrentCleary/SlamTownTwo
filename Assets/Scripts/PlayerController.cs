@@ -32,8 +32,8 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem dirtParticle;
     public ParticleSystem jumpParticle;
     public Vector3 jumpParticleSpawnPos;
-    private float jumpParticleOffset_X_ = 4.3f;
-    private float jumpParticleOffset_Y_ = 2f;
+    private float jumpParticleOffset_X_ = 1.5f;
+    private float jumpParticleOffset_Y_ = 1f;
 
     
     // Start is called before the first frame update
@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         Jump1();
         Jump2();
         Boost();
@@ -125,13 +125,8 @@ public class PlayerController : MonoBehaviour
         }
 
         // Animal
-        if (other.gameObject.CompareTag("Animal"))
+        if(other.gameObject.CompareTag("Animal"))
         {
-            // Triggers
-            gameOver = true;
-            mooseCollision = true;
-            Debug.Log("Hit Animal");
-
             // Animations
             playerRb.AddForce(Vector3.left * animalCollision, ForceMode.Impulse);
             playerAnimator.SetBool("Death_b", true);
@@ -143,6 +138,11 @@ public class PlayerController : MonoBehaviour
 
             // Sound
             playerAudio.PlayOneShot(crashSound, 1.0f);
+
+            // Triggers
+            mooseCollision = true;
+            gameOver = true;
+            Debug.Log("Hit Animal");
         }
 
     }

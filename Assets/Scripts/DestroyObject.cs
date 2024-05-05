@@ -6,7 +6,6 @@ public class DestroyObject : MonoBehaviour
 {
 
     private float obstacleBound = -20;
-    private float groundBound = -100;
 
 
 
@@ -19,11 +18,6 @@ public class DestroyObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.transform.position.x < groundBound )
-        {
-            Destroy(gameObject);
-        }
-
         if(transform.position.x < obstacleBound && gameObject.CompareTag("Obstacle"))
         {
             Destroy(gameObject);

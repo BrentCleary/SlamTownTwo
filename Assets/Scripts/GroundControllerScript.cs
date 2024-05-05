@@ -20,7 +20,7 @@ public class GroundControllerScript : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.CompareTag("Ground"))
         {

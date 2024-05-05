@@ -7,10 +7,11 @@ public class MoveLeft : MonoBehaviour
     public float speed;
     private float normalSpeed = 40;
     private float boostSpeed = 60;
-    private float dragGroundValue = 30f;
-    private float dragAirValue = 5f;
 
-    private ParticleSystem jumpParticle;
+    // Reduces speed value After Boost
+    private float dragGroundValue = 2f;
+    private float dragAirValue = .5f;
+
     private PlayerController playerControllerScript;
 
     void Start()
@@ -18,7 +19,6 @@ public class MoveLeft : MonoBehaviour
         // This script find the GameObject by tag "Player", and gets the PlayerController class from the object,
         // and assigns it to the private variable playerControllerScript, or type ?PlayerController?
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
-        jumpParticle = playerControllerScript.jumpParticle;
         speed = normalSpeed;
     }
 
