@@ -41,11 +41,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\LerpHorizontal.cs" />
+     <Compile Include="Assets\Scripts\GroundControllerScript.cs" />
      <Compile Include="Assets\Scripts\MooseAnimations.cs" />
      <Compile Include="Assets\Scripts\MoveLeft.cs" />
      <Compile Include="Assets\Scripts\RepeatBackground.cs" />
      <Compile Include="Assets\Scripts\DestroyObject.cs" />
      <Compile Include="Assets\Scripts\SpawnManager.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <None Include="Assets\Course Library\Fonts\Roboto\LICENSE.txt" />

@@ -9,25 +9,34 @@ public class SpawnManager : MonoBehaviour
     // Spawn Manager Variables
     public GameObject[] obstaclePrefabs;
 
+    // Scripts
+    private PlayerController playerControllerScript;
+    private GameManager gameManagerScript;
+
     // Spawn Position
-    private Vector3 spawnPos = new Vector3(50, 0, 0);
+    // private Vector3 spawnPos = new Vector3(0, 0, 0);
+    private Vector3 spawnPos;
+
     // SpawnObstacle Variables
     private float startDelay = 1f;
     private float repeatRate = 1f;
-    private PlayerController playerControllerScript;
 
 
     // Start is called before the first frame update
     void Start()
     {
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
+        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        spawnPos = gameObject.transform.position;
         InvokeRepeating("SpawnObstacle", startDelay, repeatRate);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // increases the repeat rate accordering to the speed of the move left script
+        repeatRate = repeatRate / (gameManagerScript.normalSpeed / gameManagerScript.gameSpeed);
     }
 
     void SpawnObstacle()
@@ -40,13 +49,8 @@ public class SpawnManager : MonoBehaviour
         if(playerControllerScript.gameOver == false)
         {
             Instantiate(obstaclePrefabs[obstacleIndex], spawnPos, obstaclePrefabs[obstacleIndex].transform.rotation);
-                    Debug.Log("Spawning");
+            Debug.Log("Spawning " + obstaclePrefabs[obstacleIndex].name);
         }
-    }
-
-    void DebugCheck()
-    {
-        Debug.Log("Spawning");
     }
 
 }

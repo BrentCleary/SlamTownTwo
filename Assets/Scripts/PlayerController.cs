@@ -6,9 +6,13 @@ public class PlayerController : MonoBehaviour
 {
     // Player RigidBody
     public Rigidbody playerRb;
-    public float jumpForce = 700f;
-    public float gravityModifier = 20f;
-    private float animalCollision = 2000f;
+    public float jumpForce = 500f;
+
+    // Collision Properties
+    private float collisionForceTotal;
+    private float collisionForceBasic = 2000f;
+    private float collisionSpeedModifier; // Based on gameManager Speed
+    private float collisionSpeedReducer = .01f;
 
     // Player Animator
     private Animator playerAnimator;
@@ -19,6 +23,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip crashSound;
 
     // Triggers
+    public bool boostOn;
     public bool gameOver;
     public bool mooseCollision = false;
     public bool isOnGround = true;
@@ -31,24 +36,38 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem dirtParticle;
     public ParticleSystem jumpParticle;
     public Vector3 jumpParticleSpawnPos;
+    private float jumpParticleOffset_X_ = 1.5f;
+    private float jumpParticleOffset_Y_ = 1f;
 
+    public GameManager gameManagerScript;
+
+    public float gravityModifier = 30f;
     
     // Start is called before the first frame update
     void Start()
     {
+        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManager>();
+
         playerAudio = GetComponent<AudioSource>();
         playerAnimator = GetComponent<Animator>();
         playerRb = GetComponent<Rigidbody>();
+
         Physics.gravity *= gravityModifier;
+
     }
 
 
     // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
-        // JumpScript();
+
         Jump1();
         Jump2();
+        Boost();
+
+        collisionSpeedModifier = gameManagerScript.gameSpeed;
+        collisionForceTotal = collisionForceBasic * collisionSpeedModifier * collisionSpeedReducer;
+
     }
 
     public void Jump1()
@@ -67,9 +86,8 @@ public class PlayerController : MonoBehaviour
             // Animations
             playerAnimator.SetTrigger("Jump_trig");
             dirtParticle.Stop();
-            jumpParticleSpawnPos = transform.position;
 
-            Instantiate(jumpParticle, jumpParticleSpawnPos, jumpParticle.transform.rotation);
+            Instantiate(jumpParticle, JumpParticlePostion(), jumpParticle.transform.rotation);
             playerAudio.PlayOneShot(jumpSound, 1.0f);
             
         }
@@ -83,8 +101,7 @@ public class PlayerController : MonoBehaviour
             playerAnimator.SetTrigger("Jump_trig");
             secondJump = false;
 
-            jumpParticleSpawnPos = transform.position;
-            Instantiate(jumpParticle, jumpParticleSpawnPos, jumpParticle.transform.rotation);
+            Instantiate(jumpParticle, JumpParticlePostion(), jumpParticle.transform.rotation);
             playerAudio.PlayOneShot(jumpSound, 1.0f);
             
         }
@@ -103,7 +120,7 @@ public class PlayerController : MonoBehaviour
         if(other.gameObject.CompareTag("Obstacle"))
         {
             // Animations
-            playerRb.AddForce(Vector3.left * animalCollision, ForceMode.Impulse);
+            playerRb.AddForce(Vector3.left * collisionForceTotal, ForceMode.Impulse);
             playerAnimator.SetBool("Death_b", true);
             playerAnimator.SetInteger("DeathType_int", 1);
 
@@ -120,15 +137,10 @@ public class PlayerController : MonoBehaviour
         }
 
         // Animal
-        if (other.gameObject.CompareTag("Animal"))
+        if(other.gameObject.CompareTag("Animal"))
         {
-            // Triggers
-            gameOver = true;
-            mooseCollision = true;
-            Debug.Log("Hit Animal");
-
             // Animations
-            playerRb.AddForce(Vector3.left * animalCollision, ForceMode.Impulse);
+            playerRb.AddForce(Vector3.left * collisionForceTotal, ForceMode.Impulse);
             playerAnimator.SetBool("Death_b", true);
             playerAnimator.SetInteger("DeathType_int", 1);
 
@@ -138,6 +150,11 @@ public class PlayerController : MonoBehaviour
 
             // Sound
             playerAudio.PlayOneShot(crashSound, 1.0f);
+
+            // Triggers
+            mooseCollision = true;
+            gameOver = true;
+            Debug.Log("Hit Animal");
         }
 
     }
@@ -147,5 +164,25 @@ public class PlayerController : MonoBehaviour
         coolTime = false;
     }
     
+    void Boost()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            boostOn = true;
+        }
+        else
+        {
+            boostOn = false;
+        }
+    }
+
+    public Vector3 JumpParticlePostion()
+    {
+        // Spawn of jump explosions
+        return jumpParticleSpawnPos = new Vector3(playerRb.transform.position.x + jumpParticleOffset_X_, 
+                                                  playerRb.transform.position.y + jumpParticleOffset_Y_,
+                                                  playerRb.transform.position.z);
+    }
+
 }
     

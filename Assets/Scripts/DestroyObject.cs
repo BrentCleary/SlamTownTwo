@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class DestroyObject : MonoBehaviour
 {
+
+    private float obstacleBound = -20;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +18,12 @@ public class DestroyObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.transform.position.x < -20 )
+        if(transform.position.x < obstacleBound && gameObject.CompareTag("Obstacle"))
+        {
+            Destroy(gameObject);
+        }
+
+        if(transform.position.x < obstacleBound && gameObject.CompareTag("Particle"))
         {
             Destroy(gameObject);
         }
