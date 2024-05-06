@@ -10,13 +10,12 @@ public class RepeatBackground : MonoBehaviour
     private int track_X_Start = 1080;
     private int track_X_End = -1080;
 
+
     // Scenery Positions
     private Vector3 sceneryStartPosition;
     private Vector3 sceneryEndPosition;
     private int scenery_X_Start = 1000;
     private int scenery_X_End = -1000;
-
-
 
 
     // Start is called before the first frame update
