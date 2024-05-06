@@ -598,8 +598,8 @@ GameObject:
   - component: {fileID: 2387567667999090265}
   - component: {fileID: 5320465463184697688}
   - component: {fileID: -3659970967026592361}
-  - component: {fileID: 7115546663000659861}
   - component: {fileID: 5049437153079206537}
+  - component: {fileID: -4765426642364991544}
   m_Layer: 0
   m_Name: MooseContainer
   m_TagString: Obstacle
@@ -642,8 +642,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.6167417, y: 3.3365302, z: 2}
-  m_Center: {x: -0.6918857, y: 1.6682651, z: 0}
+  m_Size: {x: 9.199499, y: 3.3365302, z: 2}
+  m_Center: {x: 2.099492, y: 1.6682651, z: 0}
 --- !u!54 &-3659970967026592361
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -671,18 +671,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7115546663000659861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6803393774483597798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c022585bb1ccca64eaa0cbb8674b4b01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5049437153079206537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -695,6 +683,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6323db2b2c9b81d4d8aeb223083363d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-4765426642364991544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6803393774483597798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c022585bb1ccca64eaa0cbb8674b4b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveLeftSpeed: 0
 --- !u!1 &7000520801299991669
 GameObject:
   m_ObjectHideFlags: 0

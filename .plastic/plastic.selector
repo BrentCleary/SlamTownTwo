@@ -1,0 +1,4 @@
+repository "SlamTownTwo@BrightGames@cloud"
+  path "/"
+    br "/main"
+    co "/main"

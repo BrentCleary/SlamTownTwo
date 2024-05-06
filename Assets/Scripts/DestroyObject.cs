@@ -22,5 +22,10 @@ public class DestroyObject : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if(transform.position.x < obstacleBound && gameObject.CompareTag("Particle"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

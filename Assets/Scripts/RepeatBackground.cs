@@ -8,13 +8,13 @@ public class RepeatBackground : MonoBehaviour
     private Vector3 trackStartPosition;
     private Vector3 trackEndPosition;
     private int track_X_Start = 1080;
-    private int track_X_End = -240;
+    private int track_X_End = -1080;
 
     // Scenery Positions
     private Vector3 sceneryStartPosition;
     private Vector3 sceneryEndPosition;
-    private int scenery_X_Start = 1500;
-    private int scenery_X_End = -1500;
+    private int scenery_X_Start = 1000;
+    private int scenery_X_End = -1000;
 
 
 
@@ -33,7 +33,7 @@ public class RepeatBackground : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         TrackReset();
         EnvironmentReset();

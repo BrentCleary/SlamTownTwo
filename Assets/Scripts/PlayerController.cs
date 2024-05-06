@@ -6,9 +6,13 @@ public class PlayerController : MonoBehaviour
 {
     // Player RigidBody
     public Rigidbody playerRb;
-    public float jumpForce = 700f;
-    public float gravityModifier = 20f;
-    private float animalCollision = 2000f;
+    public float jumpForce = 500f;
+
+    // Collision Properties
+    private float collisionForceTotal;
+    private float collisionForceBasic = 2000f;
+    private float collisionSpeedModifier; // Based on gameManager Speed
+    private float collisionSpeedReducer = .01f;
 
     // Player Animator
     private Animator playerAnimator;
@@ -35,15 +39,21 @@ public class PlayerController : MonoBehaviour
     private float jumpParticleOffset_X_ = 1.5f;
     private float jumpParticleOffset_Y_ = 1f;
 
+    public GameManager gameManagerScript;
+
+    public float gravityModifier = 30f;
     
     // Start is called before the first frame update
     void Start()
     {
+        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManager>();
+
         playerAudio = GetComponent<AudioSource>();
         playerAnimator = GetComponent<Animator>();
         playerRb = GetComponent<Rigidbody>();
+
         Physics.gravity *= gravityModifier;
-        
+
     }
 
 
@@ -54,7 +64,10 @@ public class PlayerController : MonoBehaviour
         Jump1();
         Jump2();
         Boost();
-        
+
+        collisionSpeedModifier = gameManagerScript.gameSpeed;
+        collisionForceTotal = collisionForceBasic * collisionSpeedModifier * collisionSpeedReducer;
+
     }
 
     public void Jump1()
@@ -65,7 +78,6 @@ public class PlayerController : MonoBehaviour
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
 
             // Triggers
-            boostOn = true;
             isOnGround = false;
             secondJump = true;
             coolTime = true;
@@ -108,7 +120,7 @@ public class PlayerController : MonoBehaviour
         if(other.gameObject.CompareTag("Obstacle"))
         {
             // Animations
-            playerRb.AddForce(Vector3.left * animalCollision, ForceMode.Impulse);
+            playerRb.AddForce(Vector3.left * collisionForceTotal, ForceMode.Impulse);
             playerAnimator.SetBool("Death_b", true);
             playerAnimator.SetInteger("DeathType_int", 1);
 
@@ -128,7 +140,7 @@ public class PlayerController : MonoBehaviour
         if(other.gameObject.CompareTag("Animal"))
         {
             // Animations
-            playerRb.AddForce(Vector3.left * animalCollision, ForceMode.Impulse);
+            playerRb.AddForce(Vector3.left * collisionForceTotal, ForceMode.Impulse);
             playerAnimator.SetBool("Death_b", true);
             playerAnimator.SetInteger("DeathType_int", 1);
 
