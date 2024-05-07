@@ -14,9 +14,9 @@ public class RepeatBackground : MonoBehaviour
     private int scenery_X_Start = 1000;
     private int scenery_X_End = -1000;
 
+    public Transform trackGroup_0;
     public Transform trackGroup_1;
     public Transform trackGroup_2;
-    public Transform trackGroup_3;
 
     // Start is called before the first frame update
     void Start()
@@ -26,9 +26,9 @@ public class RepeatBackground : MonoBehaviour
         sceneryStartPosition = new Vector3(scenery_X_Start, transform.position.y, transform.position.z);
         sceneryEndPosition = new Vector3(scenery_X_End, transform.position.y, transform.position.z);
 
-        trackGroup_1 = GameObject.Find("TrackGroup_1").GetComponent<Transform>();
-        trackGroup_2 = GameObject.Find("TrackGroup_2").GetComponent<Transform>();
-        trackGroup_3 = GameObject.Find("TrackGroup_3").GetComponent<Transform>();
+        trackGroup_0 = GameObject.Find("TrackPlaneGroup (0)").GetComponent<Transform>();
+        trackGroup_1 = GameObject.Find("TrackPlaneGroup (1)").GetComponent<Transform>();
+        trackGroup_2 = GameObject.Find("TrackPlaneGroup (2)").GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -61,16 +61,40 @@ public class RepeatBackground : MonoBehaviour
         }
     }
 
+
+    // Adjusts TrackGroups transform.position on reset to eliminate gaps between tracks that occur around ( gameSpeed > 1000 )
     void TrackSpacingAdjustment()
     {
-        // Track Group 3 : 1
-        if(trackGroup_1.position.x > trackGroup_3.position.x)
+        // Track Group 0 to 2
+        if(trackGroup_0.position.x > trackGroup_2.position.x) // Position check to make sure adjusted track is in front (greater x value)
         {
-            if(trackGroup_1.position.x - trackGroup_3.position.x != 1000)
+            if(trackGroup_0.position.x - trackGroup_2.position.x != 1000)
             {
-                trackGroup_1.position = new Vector3 (trackGroup_3.position.x + 1000, 
-                                                     trackGroup_3.position.y, 
-                                                     trackGroup_3.position.z);
+                trackGroup_0.position = new Vector3(trackGroup_2.position.x + 1000, 
+                                                    trackGroup_2.position.y, 
+                                                    trackGroup_2.position.z);
+            }
+        }
+
+        // Track Group 1 to 0
+        if(trackGroup_1.position.x > trackGroup_0.position.x)
+        {
+            if(trackGroup_1.position.x - trackGroup_0.position.x != 1000)
+            {
+                trackGroup_1.position = new Vector3(trackGroup_0.position.x + 1000, 
+                                                    trackGroup_0.position.y, 
+                                                    trackGroup_0.position.z);
+            }
+        }
+
+        // Track Group 2 to 1
+        if(trackGroup_2.position.x > trackGroup_1.position.x)
+        {
+            if(trackGroup_2.position.x - trackGroup_1.position.x != 1000)
+            {
+                trackGroup_2.position = new Vector3(trackGroup_1.position.x + 1000, 
+                                                    trackGroup_1.position.y, 
+                                                    trackGroup_1.position.z);
             }
         }
 
