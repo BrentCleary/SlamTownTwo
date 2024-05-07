@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public float gameSpeed;
     public float normalSpeed = 40;
     private float boostSpeed = 40;
+    private float speedTestSpeed = 2000;
 
     // Reduces speed value After Boost
     private float dragGroundValue = 3f;
@@ -36,9 +37,16 @@ public class GameManager : MonoBehaviour
     // Changes speed to 60 if boost bool is true in PlayerController.scr
     void ChangeSpeedBoost()
     {
+        // Boost Speed for Gameplay
         if(playerControllerScript.boostOn == true)
         {
             gameSpeed = gameSpeed + boostSpeed;
+        }
+
+        // Test Speed for Debugging
+        if(playerControllerScript.speedTestOn == true)
+        {
+            gameSpeed = gameSpeed + speedTestSpeed;
         }
     }
 
