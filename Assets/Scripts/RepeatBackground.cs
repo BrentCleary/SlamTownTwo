@@ -14,9 +14,17 @@ public class RepeatBackground : MonoBehaviour
     private int scenery_X_Start = 1000;
     private int scenery_X_End = -1000;
 
+    // Track Transforms
     public Transform trackGroup_0;
     public Transform trackGroup_1;
     public Transform trackGroup_2;
+
+    // Scenery Transforms
+    public Transform sceneryLeftGroup_0;
+    public Transform sceneryLeftGroup_1;
+    public Transform sceneryRightGroup_0;
+    public Transform sceneryRightGroup_1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,13 +37,22 @@ public class RepeatBackground : MonoBehaviour
         trackGroup_0 = GameObject.Find("TrackPlaneGroup (0)").GetComponent<Transform>();
         trackGroup_1 = GameObject.Find("TrackPlaneGroup (1)").GetComponent<Transform>();
         trackGroup_2 = GameObject.Find("TrackPlaneGroup (2)").GetComponent<Transform>();
+
+        sceneryLeftGroup_0 = GameObject.Find("SceneryLeftGroup (0)").GetComponent<Transform>();
+        sceneryLeftGroup_1 = GameObject.Find("SceneryLeftGroup (1)").GetComponent<Transform>();
+        sceneryRightGroup_0 = GameObject.Find("SceneryRightGroup (0)").GetComponent<Transform>();
+        sceneryRightGroup_1 = GameObject.Find("SceneryRightGroup (1)").GetComponent<Transform>();
+
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
         TrackReset();
-        EnvironmentReset();
+        TrackSpacingAdjustment();
+
+        SceneryReset();
+        ScenerySpacingAdjustment();
     }
 
     void TrackReset()
@@ -45,28 +62,15 @@ public class RepeatBackground : MonoBehaviour
             if(transform.position.x < trackEndPosition.x)
             {
                 transform.position = trackStartPosition;
-                TrackSpacingAdjustment();
             }
         }
     }
-
-    void EnvironmentReset()
-    {
-        if(gameObject.CompareTag("Scenery"))
-        {
-            if(transform.position.x < sceneryEndPosition.x)
-            {
-                transform.position = sceneryStartPosition;
-            }
-        }
-    }
-
 
     // Adjusts TrackGroups transform.position on reset to eliminate gaps between tracks that occur around ( gameSpeed > 1000 )
     void TrackSpacingAdjustment()
     {
         // Track Group 0 to 2
-        if(trackGroup_0.position.x > trackGroup_2.position.x) // Position check to make sure adjusted track is in front (greater x value)
+        if(trackGroup_0.position.x > trackGroup_2.position.x) // Checks track positions to only adjust on reset
         {
             if(trackGroup_0.position.x - trackGroup_2.position.x != 1000)
             {
@@ -97,6 +101,67 @@ public class RepeatBackground : MonoBehaviour
                                                     trackGroup_1.position.z);
             }
         }
+    }
+
+
+    void SceneryReset()
+    {
+        if(gameObject.CompareTag("Scenery"))
+        {
+            if(transform.position.x < sceneryEndPosition.x)
+            {
+                transform.position = sceneryStartPosition;
+            }
+        }
+    }
+
+    // Adjusts TrackGroups transform.position on reset to eliminate gaps between tracks that occur around ( gameSpeed > 1000 )
+    void ScenerySpacingAdjustment()
+    {
+        // sceneryLeftGroup 0 to 1
+        if(sceneryLeftGroup_0.position.x > sceneryLeftGroup_1.position.x) // Checks track positions to only adjust on reset
+        {
+            if(sceneryLeftGroup_0.position.x - sceneryLeftGroup_1.position.x != 1000)
+            {
+                sceneryLeftGroup_0.position = new Vector3(sceneryLeftGroup_1.position.x + 1000, 
+                                                    sceneryLeftGroup_1.position.y, 
+                                                    sceneryLeftGroup_1.position.z);
+            }
+        }
+
+        // sceneryLeftGroup 1 to 0
+        if(sceneryLeftGroup_1.position.x > sceneryLeftGroup_0.position.x) // Checks track positions to only adjust on reset
+        {
+            if(sceneryLeftGroup_1.position.x - sceneryLeftGroup_0.position.x != 1000)
+            {
+                sceneryLeftGroup_1.position = new Vector3(sceneryLeftGroup_0.position.x + 1000, 
+                                                    sceneryLeftGroup_0.position.y, 
+                                                    sceneryLeftGroup_0.position.z);
+            }
+        }
+
+        // sceneryRightGroup 0 to 1
+        if(sceneryRightGroup_0.position.x > sceneryRightGroup_1.position.x) // Checks track positions to only adjust on reset
+        {
+            if(sceneryRightGroup_0.position.x - sceneryRightGroup_1.position.x != 1000)
+            {
+                sceneryRightGroup_0.position = new Vector3(sceneryRightGroup_1.position.x + 1000, 
+                                                    sceneryRightGroup_1.position.y, 
+                                                    sceneryRightGroup_1.position.z);
+            }
+        }
+
+        // sceneryRightGroup 1 to 0
+        if(sceneryRightGroup_1.position.x > sceneryRightGroup_0.position.x) // Checks track positions to only adjust on reset
+        {
+            if(sceneryRightGroup_1.position.x - sceneryRightGroup_0.position.x != 1000)
+            {
+                sceneryRightGroup_1.position = new Vector3(sceneryRightGroup_0.position.x + 1000, 
+                                                    sceneryRightGroup_0.position.y, 
+                                                    sceneryRightGroup_0.position.z);
+            }
+        }
 
     }
+
 }

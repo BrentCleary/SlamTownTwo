@@ -706,7 +706,7 @@ GameObject:
   - component: {fileID: 176282995}
   - component: {fileID: 176282994}
   m_Layer: 0
-  m_Name: Terrain_Front
+  m_Name: SceneryLeftGroup (1)
   m_TagString: Scenery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -784,7 +784,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 664656217}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &176282994
 MonoBehaviour:
@@ -798,9 +798,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackGroup_0: {fileID: 0}
   trackGroup_1: {fileID: 0}
   trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
+  sceneryLeftGroup_0: {fileID: 0}
+  sceneryLeftGroup_1: {fileID: 0}
+  sceneryRightGroup_0: {fileID: 0}
+  sceneryRightGroup_1: {fileID: 0}
 --- !u!114 &176282995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1111,7 +1115,7 @@ GameObject:
   - component: {fileID: 236753900}
   - component: {fileID: 236753899}
   m_Layer: 0
-  m_Name: Terrain_Back
+  m_Name: SceneryLeftGroup (0)
   m_TagString: Scenery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1189,7 +1193,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 664656217}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &236753899
 MonoBehaviour:
@@ -1203,9 +1207,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackGroup_0: {fileID: 0}
   trackGroup_1: {fileID: 0}
   trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
+  sceneryLeftGroup_0: {fileID: 0}
+  sceneryLeftGroup_1: {fileID: 0}
+  sceneryRightGroup_0: {fileID: 0}
+  sceneryRightGroup_1: {fileID: 0}
 --- !u!114 &236753900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1798,39 +1806,6 @@ MonoBehaviour:
   target: {fileID: 88644570}
   smoothSpeed: 10
   offset: {x: -15, y: 6, z: 0}
---- !u!1 &543522663
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 543522665}
-  m_Layer: 0
-  m_Name: Scenery_Terrain_Right
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &543522665
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543522663}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1514217641}
-  - {fileID: 545607799}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &545607798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,7 +1820,7 @@ GameObject:
   - component: {fileID: 545607801}
   - component: {fileID: 545607800}
   m_Layer: 0
-  m_Name: Terrain_Front (1)
+  m_Name: SceneryRightGroup (1)
   m_TagString: Scenery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1864,7 +1839,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 543522665}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &545607800
 MonoBehaviour:
@@ -1878,9 +1853,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackGroup_0: {fileID: 0}
   trackGroup_1: {fileID: 0}
   trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
+  sceneryLeftGroup_0: {fileID: 0}
+  sceneryLeftGroup_1: {fileID: 0}
+  sceneryRightGroup_0: {fileID: 0}
+  sceneryRightGroup_1: {fileID: 0}
 --- !u!114 &545607801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1953,39 +1932,6 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
---- !u!1 &664656216
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 664656217}
-  m_Layer: 0
-  m_Name: Scenery_Terrain_Left
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &664656217
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 664656216}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 236753898}
-  - {fileID: 176282993}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &678121869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2239,9 +2185,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackGroup_0: {fileID: 0}
   trackGroup_1: {fileID: 0}
   trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
+  sceneryLeftGroup_0: {fileID: 0}
+  sceneryLeftGroup_1: {fileID: 0}
+  sceneryRightGroup_0: {fileID: 0}
+  sceneryRightGroup_1: {fileID: 0}
 --- !u!114 &1055406350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2772,7 +2722,7 @@ GameObject:
   - component: {fileID: 1514217643}
   - component: {fileID: 1514217642}
   m_Layer: 0
-  m_Name: Terrain_Back (1)
+  m_Name: SceneryRightGroup (0)
   m_TagString: Scenery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2791,7 +2741,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 543522665}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1514217642
 MonoBehaviour:
@@ -2805,9 +2755,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackGroup_0: {fileID: 0}
   trackGroup_1: {fileID: 0}
   trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
+  sceneryLeftGroup_0: {fileID: 0}
+  sceneryLeftGroup_1: {fileID: 0}
+  sceneryRightGroup_0: {fileID: 0}
+  sceneryRightGroup_1: {fileID: 0}
 --- !u!114 &1514217643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3792,9 +3746,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackGroup_0: {fileID: 0}
   trackGroup_1: {fileID: 0}
   trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
+  sceneryLeftGroup_0: {fileID: 0}
+  sceneryLeftGroup_1: {fileID: 0}
+  sceneryRightGroup_0: {fileID: 0}
+  sceneryRightGroup_1: {fileID: 0}
 --- !u!114 &2069884439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3899,8 +3857,10 @@ SceneRoots:
   - {fileID: 170076735}
   - {fileID: 1280151196}
   - {fileID: 420183312}
-  - {fileID: 664656217}
-  - {fileID: 543522665}
   - {fileID: 2069884440}
   - {fileID: 4591425866898013668}
   - {fileID: 1055406351}
+  - {fileID: 1514217641}
+  - {fileID: 545607799}
+  - {fileID: 236753898}
+  - {fileID: 176282993}
