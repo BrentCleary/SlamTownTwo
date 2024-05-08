@@ -36,7 +36,7 @@ public class SpawnManager : MonoBehaviour
     void Update()
     {
         // increases the repeat rate accordering to the speed of the move left script
-        repeatRate = repeatRate / (gameManagerScript.normalSpeed / gameManagerScript.gameSpeed);
+        repeatRate = (repeatRate / (gameManagerScript.normalSpeed / gameManagerScript.gameSpeed)) * Time.deltaTime;
     }
 
     void SpawnObstacle()

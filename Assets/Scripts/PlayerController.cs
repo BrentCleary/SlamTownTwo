@@ -22,8 +22,10 @@ public class PlayerController : MonoBehaviour
     public AudioClip jumpSound;
     public AudioClip crashSound;
 
-    // Triggers
-    public bool boostOn;
+    // Speed Triggers
+    public bool boostOn; // Triggers Speed increase of 20 in GameManagerScript
+    public bool speedTestOn; // Trigger Speed increase of 2000 in GameManagerScript
+
     public bool gameOver;
     public bool mooseCollision = false;
     public bool isOnGround = true;
@@ -61,9 +63,15 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
+        // Gameplay Functions
         Jump1();
         Jump2();
         Boost();
+
+
+        // Debug Functions
+        TestSpeedFunction();
+        SpeedTestBoost();
 
         collisionSpeedModifier = gameManagerScript.gameSpeed;
         collisionForceTotal = collisionForceBasic * collisionSpeedModifier * collisionSpeedReducer;
@@ -98,8 +106,32 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && secondJump && !coolTime && !gameOver)
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+
             playerAnimator.SetTrigger("Jump_trig");
             secondJump = false;
+
+            Instantiate(jumpParticle, JumpParticlePostion(), jumpParticle.transform.rotation);
+            playerAudio.PlayOneShot(jumpSound, 1.0f);
+            
+        }
+    }
+
+    public void TestSpeedFunction()
+    {
+        if(Input.GetKeyDown(KeyCode.R) && isOnGround && !gameOver)
+        {
+            // Movement
+            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+
+            // Triggers
+            isOnGround = false;
+            secondJump = true;
+            coolTime = true;
+            Invoke("CoolDown", coolTimeLength);
+
+            // Animations
+            playerAnimator.SetTrigger("Jump_trig");
+            dirtParticle.Stop();
 
             Instantiate(jumpParticle, JumpParticlePostion(), jumpParticle.transform.rotation);
             playerAudio.PlayOneShot(jumpSound, 1.0f);
@@ -175,6 +207,21 @@ public class PlayerController : MonoBehaviour
             boostOn = false;
         }
     }
+
+    void SpeedTestBoost()
+    {
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            speedTestOn = true;
+        }
+        else
+        {
+            speedTestOn = false;
+        }
+    }
+
+
+
 
     public Vector3 JumpParticlePostion()
     {
