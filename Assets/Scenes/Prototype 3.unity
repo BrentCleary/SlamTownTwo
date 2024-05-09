@@ -1689,7 +1689,7 @@ Transform:
   m_GameObject: {fileID: 534669902}
   serializedVersion: 2
   m_LocalRotation: {x: 0.06162845, y: 0.70441604, z: -0.06162845, w: 0.70441604}
-  m_LocalPosition: {x: -15, y: 6, z: 0}
+  m_LocalPosition: {x: -15, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1803,9 +1803,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77eb2f1e0f5539d49ba3f68daff72c6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 88644570}
+  camera: {fileID: 0}
+  viewField: 0
+  normalFieldOfView: 40
+  boostFieldOfView: 80
+  viewFieldInterpolater: 2
+  cameraPosition: {x: 0, y: 0, z: 0}
+  normalCameraOffset: {x: -15, y: 5, z: 0}
+  boostCameraOffset: {x: -30, y: 5, z: 0}
   smoothSpeed: 10
-  offset: {x: -15, y: 6, z: 0}
+  boostCameraOn: 0
+  boostCameraTimer: 0
+  playerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &545607798
 GameObject:
   m_ObjectHideFlags: 0
@@ -2583,7 +2592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: 7b6675de545141649953fd8adec4561b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: 7b6675de545141649953fd8adec4561b, type: 3}
       propertyPath: m_LocalRotation.w

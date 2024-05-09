@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     // Player RigidBody
     public Rigidbody playerRb;
-    public float jumpForce = 500f;
+    public float jumpForce = 20f;
 
     // Collision Properties
     private float collisionForceTotal;
@@ -67,7 +67,6 @@ public class PlayerController : MonoBehaviour
         Jump1();
         Jump2();
         Boost();
-
 
         // Debug Functions
         TestSpeedFunction();
@@ -227,8 +226,8 @@ public class PlayerController : MonoBehaviour
     {
         // Spawn of jump explosions
         return jumpParticleSpawnPos = new Vector3(playerRb.transform.position.x + jumpParticleOffset_X_, 
-                                                  playerRb.transform.position.y + jumpParticleOffset_Y_,
-                                                  playerRb.transform.position.z);
+                                                playerRb.transform.position.y + jumpParticleOffset_Y_,
+                                                playerRb.transform.position.z);
     }
 
 }
