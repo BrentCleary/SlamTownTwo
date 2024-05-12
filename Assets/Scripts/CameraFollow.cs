@@ -9,10 +9,9 @@ public class CameraFollow : MonoBehaviour
     public Camera camera;
 
     // Camera Field of View
-    public float viewField;
+    public float currentViewField;
     public float normalFieldOfView = 40;
-    public float boostFieldOfView = 80;
-    public float viewFieldInterpolater = 5;
+    public float boostFieldOfView = 60;
 
     // Camera Position Offsets
     public Vector3 cameraPosition;
@@ -22,7 +21,7 @@ public class CameraFollow : MonoBehaviour
 
     // Boost Camera 
     public bool boostCameraOn = false;
-    public float boostCameraTimer;
+    public float boostCameraTimer = 1f;
 
     // Player Variables
     private GameObject player;
@@ -64,7 +63,8 @@ public class CameraFollow : MonoBehaviour
             // View Field Adjuster
             if(camera.fieldOfView < boostFieldOfView)
             {
-                camera.fieldOfView = Mathf.Lerp(normalFieldOfView, boostFieldOfView, viewFieldInterpolater * Time.deltaTime);
+                currentViewField = Mathf.Lerp(boostFieldOfView, normalFieldOfView, boostCameraTimer * Time.deltaTime);
+                camera.fieldOfView = currentViewField;
             }
         }
         else if(boostCameraOn == false)
@@ -76,7 +76,8 @@ public class CameraFollow : MonoBehaviour
             // View Field Adjuster
             if(camera.fieldOfView > normalFieldOfView)
             {
-                camera.fieldOfView = Mathf.Lerp(boostFieldOfView, normalFieldOfView, viewFieldInterpolater * Time.deltaTime);
+                currentViewField = Mathf.Lerp(normalFieldOfView, boostFieldOfView, boostCameraTimer * Time.deltaTime);
+                camera.fieldOfView = currentViewField;
             }
         }
 
@@ -89,7 +90,6 @@ public class CameraFollow : MonoBehaviour
 
         if((playerControllerScript.boostOn && boostPossible) || (playerControllerScript.speedTestOn && boostPossible))
         {
-            boostCameraTimer = .3f;
             boostCameraOn = true;
         }
 

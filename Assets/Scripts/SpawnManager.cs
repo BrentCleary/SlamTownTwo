@@ -53,4 +53,17 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
+    public Vector3 SpawnPositionRandomizer()
+    {
+        Vector3 spawnPosLeft = new Vector3(spawnPos.x, spawnPos.y, spawnPos.z - 10);
+        Vector3 spawnPosCenter = new Vector3(spawnPos.x, spawnPos.y, spawnPos.z);
+        Vector3 spawnPosRight = new Vector3(spawnPos.x, spawnPos.y, spawnPos.z + 10);
+
+        List<Vector3> spawnPositionList = new List<Vector3>() {spawnPosLeft, spawnPosCenter, spawnPosRight};
+        
+        Vector3 randomSpawnPosition = spawnPositionList[UnityEngine.Random.Range(0,3)];
+
+        return randomSpawnPosition;
+
+    }
 }
