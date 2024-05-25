@@ -26,6 +26,7 @@ public class RepeatBackground : MonoBehaviour
     // Scenery Transforms
     private Transform sceneryGroup_0;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,9 +53,6 @@ public class RepeatBackground : MonoBehaviour
     {
         TrackReset();
         TrackSpacingAdjustmentAuto();
-
-        SceneryReset();
-        // ScenerySpacingAdjustment();
 
     }
 
@@ -112,19 +110,12 @@ public class RepeatBackground : MonoBehaviour
 
     }
 
-    void SceneryReset()
-    {
-        if(gameObject.CompareTag("Scenery"))
-        {
-            if(transform.position.x < sceneryEndPosition.x)
-            {
-                transform.position = sceneryStartPosition;
-                Debug.Log(sceneryGroup_0 + " reset at " + transform.position);
-            }
-        }
-        
 
-    }
+
+
+
+
+
 
 
 // -------------------------- Temporary Comment Out for Refactor ---------------------------------------

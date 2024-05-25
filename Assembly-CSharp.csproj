@@ -46,6 +46,7 @@
      <Compile Include="Assets\Scripts\MoveLeft.cs" />
      <Compile Include="Assets\Scripts\RepeatBackground.cs" />
      <Compile Include="Assets\Scripts\DestroyObject.cs" />
+     <Compile Include="Assets\Scripts\RepeatScenery.cs" />
      <Compile Include="Assets\Scripts\SpawnManager.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
