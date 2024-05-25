@@ -219,6 +219,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -525,6 +529,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (0)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -633,6 +641,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -743,6 +755,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -851,6 +867,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -1019,137 +1039,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameSpeed: 0
   normalSpeed: 40
---- !u!1 &176282990
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 176282993}
-  - component: {fileID: 176282992}
-  - component: {fileID: 176282991}
-  - component: {fileID: 176282995}
-  - component: {fileID: 176282994}
-  m_Layer: 0
-  m_Name: SceneryLeftGroup (1)
-  m_TagString: Scenery
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!154 &176282991
-TerrainCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176282990}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: 5bf805c6cc636dc42b60143b9570e2ea, type: 2}
-  m_EnableTreeColliders: 1
---- !u!218 &176282992
-Terrain:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176282990}
-  m_Enabled: 1
-  serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 5bf805c6cc636dc42b60143b9570e2ea, type: 2}
-  m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
-  m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
-  m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 5
-  m_SplatMapDistance: 1000
-  m_HeightmapMaximumLOD: 0
-  m_ShadowCastingMode: 2
-  m_DrawHeightmap: 1
-  m_DrawInstanced: 0
-  m_DrawTreesAndFoliage: 1
-  m_StaticShadowCaster: 0
-  m_IgnoreQualitySettings: 0
-  m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
-  m_BakeLightProbesForTrees: 1
-  m_PreserveTreePrototypeLayers: 0
-  m_DeringLightProbesForTrees: 1
-  m_ReceiveGI: 1
-  m_ScaleInLightmap: 0.0256
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
-  m_GroupingID: 0
-  m_RenderingLayerMask: 1
-  m_AllowAutoConnect: 1
-  m_EnableHeightmapRayTracing: 1
-  m_EnableTreesAndDetailsRayTracing: 0
-  m_TreeMotionVectorModeOverride: 3
---- !u!4 &176282993
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176282990}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 500, y: 0, z: 15}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &176282994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176282990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackGroup_0: {fileID: 0}
-  trackGroup_1: {fileID: 0}
-  trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
-  trackGroup_4: {fileID: 0}
-  trackGroup_5: {fileID: 0}
-  trackGroup_6: {fileID: 0}
-  trackList: []
-  sceneryLeftGroup_0: {fileID: 0}
-  sceneryLeftGroup_1: {fileID: 0}
-  sceneryRightGroup_0: {fileID: 0}
-  sceneryRightGroup_1: {fileID: 0}
---- !u!114 &176282995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176282990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c022585bb1ccca64eaa0cbb8674b4b01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveLeftSpeed: 0
 --- !u!1001 &185200359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1245,6 +1134,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -1355,6 +1248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -1463,6 +1360,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -1638,6 +1539,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -1662,10 +1567,8 @@ GameObject:
   - component: {fileID: 236753898}
   - component: {fileID: 236753897}
   - component: {fileID: 236753896}
-  - component: {fileID: 236753900}
-  - component: {fileID: 236753899}
   m_Layer: 0
-  m_Name: SceneryLeftGroup (0)
+  m_Name: SceneryLeft (0)
   m_TagString: Scenery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1739,49 +1642,12 @@ Transform:
   m_GameObject: {fileID: 236753895}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -500, y: 0, z: 15}
+  m_LocalPosition: {x: 0, y: 0, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 805928756}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &236753899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236753895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackGroup_0: {fileID: 0}
-  trackGroup_1: {fileID: 0}
-  trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
-  trackGroup_4: {fileID: 0}
-  trackGroup_5: {fileID: 0}
-  trackGroup_6: {fileID: 0}
-  trackList: []
-  sceneryLeftGroup_0: {fileID: 0}
-  sceneryLeftGroup_1: {fileID: 0}
-  sceneryRightGroup_0: {fileID: 0}
-  sceneryRightGroup_1: {fileID: 0}
---- !u!114 &236753900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236753895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c022585bb1ccca64eaa0cbb8674b4b01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveLeftSpeed: 0
 --- !u!1001 &291752015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1877,6 +1743,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -1987,6 +1857,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -2013,7 +1887,7 @@ GameObject:
   - component: {fileID: 335524891}
   m_Layer: 0
   m_Name: TrackPlaneGroup (5)
-  m_TagString: Ground
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2030,18 +1904,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackGroup_0: {fileID: 0}
-  trackGroup_1: {fileID: 0}
-  trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
-  trackGroup_4: {fileID: 0}
-  trackGroup_5: {fileID: 0}
-  trackGroup_6: {fileID: 0}
   trackList: []
-  sceneryLeftGroup_0: {fileID: 0}
-  sceneryLeftGroup_1: {fileID: 0}
-  sceneryRightGroup_0: {fileID: 0}
-  sceneryRightGroup_1: {fileID: 0}
+  sceneryStartPosition: {x: 0, y: 0, z: 0}
+  sceneryEndPosition: {x: 0, y: 0, z: 0}
+  sceneryList: []
 --- !u!114 &335524892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2078,7 +1944,7 @@ Transform:
   - {fileID: 818785815}
   - {fileID: 1111354293}
   - {fileID: 349175946}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1422724452}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &349175945
 PrefabInstance:
@@ -2175,6 +2041,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -2285,6 +2155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -2339,7 +2213,7 @@ Transform:
   m_GameObject: {fileID: 420183310}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 270, y: 0, z: 0}
+  m_LocalPosition: {x: 300, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2441,6 +2315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -2467,7 +2345,7 @@ GameObject:
   - component: {fileID: 502474876}
   m_Layer: 0
   m_Name: TrackPlaneGroup (3)
-  m_TagString: Ground
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2484,18 +2362,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackGroup_0: {fileID: 0}
-  trackGroup_1: {fileID: 0}
-  trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
-  trackGroup_4: {fileID: 0}
-  trackGroup_5: {fileID: 0}
-  trackGroup_6: {fileID: 0}
   trackList: []
-  sceneryLeftGroup_0: {fileID: 0}
-  sceneryLeftGroup_1: {fileID: 0}
-  sceneryRightGroup_0: {fileID: 0}
-  sceneryRightGroup_1: {fileID: 0}
+  sceneryStartPosition: {x: 0, y: 0, z: 0}
+  sceneryEndPosition: {x: 0, y: 0, z: 0}
+  sceneryList: []
 --- !u!114 &502474877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2532,7 +2402,7 @@ Transform:
   - {fileID: 1993611796}
   - {fileID: 1764598773}
   - {fileID: 308636340}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1422724452}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &534669902
 GameObject:
@@ -2747,137 +2617,6 @@ MonoBehaviour:
   boostCameraOn: 0
   boostCameraTimer: 0
   playerPosition: {x: 0, y: 0, z: 0}
---- !u!1 &545607798
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 545607799}
-  - component: {fileID: 545607803}
-  - component: {fileID: 545607802}
-  - component: {fileID: 545607801}
-  - component: {fileID: 545607800}
-  m_Layer: 0
-  m_Name: SceneryRightGroup (1)
-  m_TagString: Scenery
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &545607799
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545607798}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 500, y: 0, z: -1015}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &545607800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545607798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackGroup_0: {fileID: 0}
-  trackGroup_1: {fileID: 0}
-  trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
-  trackGroup_4: {fileID: 0}
-  trackGroup_5: {fileID: 0}
-  trackGroup_6: {fileID: 0}
-  trackList: []
-  sceneryLeftGroup_0: {fileID: 0}
-  sceneryLeftGroup_1: {fileID: 0}
-  sceneryRightGroup_0: {fileID: 0}
-  sceneryRightGroup_1: {fileID: 0}
---- !u!114 &545607801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545607798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c022585bb1ccca64eaa0cbb8674b4b01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveLeftSpeed: 0
---- !u!154 &545607802
-TerrainCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545607798}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: 5bf805c6cc636dc42b60143b9570e2ea, type: 2}
-  m_EnableTreeColliders: 1
---- !u!218 &545607803
-Terrain:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545607798}
-  m_Enabled: 1
-  serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 5bf805c6cc636dc42b60143b9570e2ea, type: 2}
-  m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
-  m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
-  m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 5
-  m_SplatMapDistance: 1000
-  m_HeightmapMaximumLOD: 0
-  m_ShadowCastingMode: 2
-  m_DrawHeightmap: 1
-  m_DrawInstanced: 0
-  m_DrawTreesAndFoliage: 1
-  m_StaticShadowCaster: 0
-  m_IgnoreQualitySettings: 0
-  m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
-  m_BakeLightProbesForTrees: 1
-  m_PreserveTreePrototypeLayers: 0
-  m_DeringLightProbesForTrees: 1
-  m_ReceiveGI: 1
-  m_ScaleInLightmap: 0.0256
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
-  m_GroupingID: 0
-  m_RenderingLayerMask: 1
-  m_AllowAutoConnect: 1
-  m_EnableHeightmapRayTracing: 1
-  m_EnableTreesAndDetailsRayTracing: 0
-  m_TreeMotionVectorModeOverride: 3
 --- !u!1001 &571806173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2973,6 +2712,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -3083,6 +2826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -3191,6 +2938,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -3301,6 +3052,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -3409,6 +3164,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -3519,6 +3278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -3545,7 +3308,7 @@ GameObject:
   - component: {fileID: 729980057}
   m_Layer: 0
   m_Name: TrackPlaneGroup (6)
-  m_TagString: Ground
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3562,18 +3325,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackGroup_0: {fileID: 0}
-  trackGroup_1: {fileID: 0}
-  trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
-  trackGroup_4: {fileID: 0}
-  trackGroup_5: {fileID: 0}
-  trackGroup_6: {fileID: 0}
   trackList: []
-  sceneryLeftGroup_0: {fileID: 0}
-  sceneryLeftGroup_1: {fileID: 0}
-  sceneryRightGroup_0: {fileID: 0}
-  sceneryRightGroup_1: {fileID: 0}
+  sceneryStartPosition: {x: 0, y: 0, z: 0}
+  sceneryEndPosition: {x: 0, y: 0, z: 0}
+  sceneryList: []
 --- !u!114 &729980058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3610,7 +3365,7 @@ Transform:
   - {fileID: 1616813735}
   - {fileID: 1038230883}
   - {fileID: 1420931688}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1422724452}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &738016458
 PrefabInstance:
@@ -3708,6 +3463,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -3721,6 +3480,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 738016458}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &805928755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 805928756}
+  - component: {fileID: 805928758}
+  - component: {fileID: 805928757}
+  m_Layer: 0
+  m_Name: SceneryGroup (0)
+  m_TagString: Scenery
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &805928756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805928755}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 236753898}
+  - {fileID: 1514217641}
+  m_Father: {fileID: 869192584}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &805928757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805928755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c022585bb1ccca64eaa0cbb8674b4b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveLeftSpeed: 0
+--- !u!114 &805928758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805928755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackList: []
+  sceneryStartPosition: {x: 500, y: 0, z: 0}
+  sceneryEndPosition: {x: -500, y: 0, z: 0}
+  sceneryList: []
 --- !u!1001 &809677994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3816,6 +3639,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -3926,6 +3753,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -3939,6 +3770,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 818785814}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &869192583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 869192584}
+  m_Layer: 0
+  m_Name: SceneryGroupMain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &869192584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869192583}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 805928756}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &950864327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4034,6 +3897,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -4149,6 +4016,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -4162,67 +4033,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 1038230882}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1048287374
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1048287375}
-  - component: {fileID: 1048287376}
-  m_Layer: 0
-  m_Name: TrackSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1048287375
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1048287374}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1048287376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1048287374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackGroup_0: {fileID: 0}
-  trackGroup_1: {fileID: 0}
-  trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
-  trackGroup_4: {fileID: 0}
-  trackGroup_5: {fileID: 0}
-  trackGroup_6: {fileID: 0}
-  trackList:
-  - {fileID: 1913138707650755326, guid: 12caa83f2d1617e41898af9fbc24c747, type: 3}
-  - {fileID: 1913138707650755326, guid: 12caa83f2d1617e41898af9fbc24c747, type: 3}
-  - {fileID: 1913138707650755326, guid: 12caa83f2d1617e41898af9fbc24c747, type: 3}
-  - {fileID: 1913138707650755326, guid: 12caa83f2d1617e41898af9fbc24c747, type: 3}
-  - {fileID: 1913138707650755326, guid: 12caa83f2d1617e41898af9fbc24c747, type: 3}
-  sceneryLeftGroup_0: {fileID: 0}
-  sceneryLeftGroup_1: {fileID: 0}
-  sceneryRightGroup_0: {fileID: 0}
-  sceneryRightGroup_1: {fileID: 0}
 --- !u!1 &1055406348
 GameObject:
   m_ObjectHideFlags: 0
@@ -4236,7 +4046,7 @@ GameObject:
   - component: {fileID: 1055406349}
   m_Layer: 0
   m_Name: TrackPlaneGroup (2)
-  m_TagString: Ground
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4253,18 +4063,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackGroup_0: {fileID: 0}
-  trackGroup_1: {fileID: 0}
-  trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
-  trackGroup_4: {fileID: 0}
-  trackGroup_5: {fileID: 0}
-  trackGroup_6: {fileID: 0}
   trackList: []
-  sceneryLeftGroup_0: {fileID: 0}
-  sceneryLeftGroup_1: {fileID: 0}
-  sceneryRightGroup_0: {fileID: 0}
-  sceneryRightGroup_1: {fileID: 0}
+  sceneryStartPosition: {x: 0, y: 0, z: 0}
+  sceneryEndPosition: {x: 0, y: 0, z: 0}
+  sceneryList: []
 --- !u!114 &1055406350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4301,7 +4103,7 @@ Transform:
   - {fileID: 291752016}
   - {fileID: 378932472}
   - {fileID: 1550475825}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1422724452}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1069393916
 PrefabInstance:
@@ -4398,6 +4200,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -4508,6 +4314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -4616,6 +4426,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -4726,6 +4540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -4834,6 +4652,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -4944,6 +4766,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -5052,6 +4878,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -5162,6 +4992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -5270,6 +5104,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -5380,6 +5218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (0)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -5488,6 +5330,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -5680,6 +5526,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (0)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -5858,6 +5708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -5871,6 +5725,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 1420931687}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1422724451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1422724452}
+  m_Layer: 0
+  m_Name: TrackGroupMain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1422724452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422724451}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2069884440}
+  - {fileID: 1877452284}
+  - {fileID: 1055406351}
+  - {fileID: 502474878}
+  - {fileID: 1732350417}
+  - {fileID: 335524893}
+  - {fileID: 729980059}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1424241768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5966,6 +5858,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -6076,6 +5972,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -6184,6 +6084,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -6294,6 +6198,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -6318,10 +6226,8 @@ GameObject:
   - component: {fileID: 1514217641}
   - component: {fileID: 1514217645}
   - component: {fileID: 1514217644}
-  - component: {fileID: 1514217643}
-  - component: {fileID: 1514217642}
   m_Layer: 0
-  m_Name: SceneryRightGroup (0)
+  m_Name: SceneryRight (0)
   m_TagString: Scenery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6336,49 +6242,12 @@ Transform:
   m_GameObject: {fileID: 1514217640}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -500, y: 0, z: -1015}
+  m_LocalPosition: {x: 0, y: 0, z: -1015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 805928756}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1514217642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1514217640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackGroup_0: {fileID: 0}
-  trackGroup_1: {fileID: 0}
-  trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
-  trackGroup_4: {fileID: 0}
-  trackGroup_5: {fileID: 0}
-  trackGroup_6: {fileID: 0}
-  trackList: []
-  sceneryLeftGroup_0: {fileID: 0}
-  sceneryLeftGroup_1: {fileID: 0}
-  sceneryRightGroup_0: {fileID: 0}
-  sceneryRightGroup_1: {fileID: 0}
---- !u!114 &1514217643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1514217640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c022585bb1ccca64eaa0cbb8674b4b01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveLeftSpeed: 0
 --- !u!154 &1514217644
 TerrainCollider:
   m_ObjectHideFlags: 0
@@ -6534,6 +6403,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -6642,6 +6515,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -6752,6 +6629,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -6860,6 +6741,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -6970,6 +6855,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -7078,6 +6967,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -7188,6 +7081,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -7296,6 +7193,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -7406,6 +7307,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -7432,7 +7337,7 @@ GameObject:
   - component: {fileID: 1732350415}
   m_Layer: 0
   m_Name: TrackPlaneGroup (4)
-  m_TagString: Ground
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7449,18 +7354,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackGroup_0: {fileID: 0}
-  trackGroup_1: {fileID: 0}
-  trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
-  trackGroup_4: {fileID: 0}
-  trackGroup_5: {fileID: 0}
-  trackGroup_6: {fileID: 0}
   trackList: []
-  sceneryLeftGroup_0: {fileID: 0}
-  sceneryLeftGroup_1: {fileID: 0}
-  sceneryRightGroup_0: {fileID: 0}
-  sceneryRightGroup_1: {fileID: 0}
+  sceneryStartPosition: {x: 0, y: 0, z: 0}
+  sceneryEndPosition: {x: 0, y: 0, z: 0}
+  sceneryList: []
 --- !u!114 &1732350416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7497,7 +7394,7 @@ Transform:
   - {fileID: 1436042401}
   - {fileID: 194269910}
   - {fileID: 656313329}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1422724452}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1764598772
 PrefabInstance:
@@ -7594,6 +7491,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -7704,6 +7605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -7813,6 +7718,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -7825,6 +7734,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 1854589119}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1877452284 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5512056363015477176, guid: 12caa83f2d1617e41898af9fbc24c747, type: 3}
+  m_PrefabInstance: {fileID: 4591425866898013668}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1907381841
 PrefabInstance:
@@ -7921,6 +7835,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -8041,6 +7959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -8149,6 +8071,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -8259,6 +8185,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -8285,7 +8215,7 @@ GameObject:
   - component: {fileID: 2069884438}
   m_Layer: 0
   m_Name: TrackPlaneGroup (0)
-  m_TagString: Ground
+  m_TagString: Track
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8302,18 +8232,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackGroup_0: {fileID: 0}
-  trackGroup_1: {fileID: 0}
-  trackGroup_2: {fileID: 0}
-  trackGroup_3: {fileID: 0}
-  trackGroup_4: {fileID: 0}
-  trackGroup_5: {fileID: 0}
-  trackGroup_6: {fileID: 0}
   trackList: []
-  sceneryLeftGroup_0: {fileID: 0}
-  sceneryLeftGroup_1: {fileID: 0}
-  sceneryRightGroup_0: {fileID: 0}
-  sceneryRightGroup_1: {fileID: 0}
+  sceneryStartPosition: {x: 0, y: 0, z: 0}
+  sceneryEndPosition: {x: 0, y: 0, z: 0}
+  sceneryList: []
 --- !u!114 &2069884439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8350,7 +8272,7 @@ Transform:
   - {fileID: 1555936632}
   - {fileID: 950864328}
   - {fileID: 196137460}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1422724452}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2070850930
 PrefabInstance:
@@ -8447,6 +8369,10 @@ PrefabInstance:
     - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
       propertyPath: m_Name
       value: TrackPlaneRow (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -8557,6 +8483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrackPlaneRow (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
     - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
@@ -8576,7 +8506,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1422724452}
     m_Modifications:
     - target: {fileID: 1913138707650755326, guid: 12caa83f2d1617e41898af9fbc24c747, type: 3}
       propertyPath: m_Name
@@ -8636,15 +8566,5 @@ SceneRoots:
   - {fileID: 170076735}
   - {fileID: 1280151196}
   - {fileID: 420183312}
-  - {fileID: 2069884440}
-  - {fileID: 4591425866898013668}
-  - {fileID: 1055406351}
-  - {fileID: 502474878}
-  - {fileID: 1732350417}
-  - {fileID: 335524893}
-  - {fileID: 729980059}
-  - {fileID: 1514217641}
-  - {fileID: 545607799}
-  - {fileID: 236753898}
-  - {fileID: 176282993}
-  - {fileID: 1048287375}
+  - {fileID: 1422724452}
+  - {fileID: 869192584}
