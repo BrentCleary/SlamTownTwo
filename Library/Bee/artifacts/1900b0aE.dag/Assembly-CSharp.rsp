@@ -364,8 +364,8 @@
 "Assets/Scripts/MooseAnimations.cs"
 "Assets/Scripts/MoveLeft.cs"
 "Assets/Scripts/PlayerController.cs"
-"Assets/Scripts/RepeatBackground.cs"
-"Assets/Scripts/RepeatScenery.cs"
+"Assets/Scripts/RepeatSceneryScript.cs"
+"Assets/Scripts/RepeatTrackScript.cs"
 "Assets/Scripts/SpawnManager.cs"
 -langversion:9.0
 

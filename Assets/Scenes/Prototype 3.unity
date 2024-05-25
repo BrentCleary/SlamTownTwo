@@ -546,6 +546,111 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 95722634}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &97213157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 97213161}
+  - component: {fileID: 97213160}
+  - component: {fileID: 97213159}
+  - component: {fileID: 97213158}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &97213158
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97213157}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &97213159
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97213157}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &97213160
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97213157}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &97213161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97213157}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 60, y: 10, z: 0}
+  m_LocalScale: {x: 0.5, y: 4, z: 6}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &102749760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -864,6 +969,119 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+--- !u!1001 &136214668
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 272102732}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &136214669 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 136214668}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &151027541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1648,98 +1866,119 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 226158486}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &236753895
-GameObject:
+--- !u!1001 &226869522
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 236753898}
-  - component: {fileID: 236753897}
-  - component: {fileID: 236753896}
-  m_Layer: 0
-  m_Name: SceneryLeft (0)
-  m_TagString: Scenery
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!154 &236753896
-TerrainCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236753895}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
   serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: 0d91bdcb3c640ea409876d8b73585652, type: 2}
-  m_EnableTreeColliders: 1
---- !u!218 &236753897
-Terrain:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236753895}
-  m_Enabled: 1
-  serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 0d91bdcb3c640ea409876d8b73585652, type: 2}
-  m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
-  m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
-  m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 5
-  m_SplatMapDistance: 1000
-  m_HeightmapMaximumLOD: 0
-  m_ShadowCastingMode: 2
-  m_DrawHeightmap: 1
-  m_DrawInstanced: 0
-  m_DrawTreesAndFoliage: 1
-  m_StaticShadowCaster: 0
-  m_IgnoreQualitySettings: 0
-  m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
-  m_BakeLightProbesForTrees: 1
-  m_PreserveTreePrototypeLayers: 0
-  m_DeringLightProbesForTrees: 1
-  m_ReceiveGI: 1
-  m_ScaleInLightmap: 0.0256
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
-  m_GroupingID: 0
-  m_RenderingLayerMask: 1
-  m_AllowAutoConnect: 1
-  m_EnableHeightmapRayTracing: 1
-  m_EnableTreesAndDetailsRayTracing: 0
-  m_TreeMotionVectorModeOverride: 3
---- !u!4 &236753898
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 272102732}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &226869523 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 226869522}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236753895}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 15}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 805928756}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &256898972
 GameObject:
   m_ObjectHideFlags: 0
@@ -1832,6 +2071,75 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+--- !u!1 &272102731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 272102732}
+  - component: {fileID: 272102734}
+  - component: {fileID: 272102733}
+  m_Layer: 0
+  m_Name: TrackPlaneGroup (8)
+  m_TagString: Track
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &272102732
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272102731}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3000, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1040689539}
+  - {fileID: 1160147891}
+  - {fileID: 1659473380}
+  - {fileID: 732997069}
+  - {fileID: 136214669}
+  - {fileID: 1714960903}
+  - {fileID: 897555941}
+  - {fileID: 226869523}
+  - {fileID: 482234076}
+  - {fileID: 742389113}
+  m_Father: {fileID: 1422724452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &272102733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272102731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackList: []
+--- !u!114 &272102734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272102731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c022585bb1ccca64eaa0cbb8674b4b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveLeftSpeed: 0
 --- !u!1001 &291752015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1945,6 +2253,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 291752015}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &299301252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 299301253}
+  - component: {fileID: 299301255}
+  - component: {fileID: 299301254}
+  m_Layer: 0
+  m_Name: TrackPlaneGroup (7)
+  m_TagString: Track
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &299301253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299301252}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3000, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 334205041}
+  - {fileID: 916424502}
+  - {fileID: 1335731414}
+  - {fileID: 1264135374}
+  - {fileID: 509042887}
+  - {fileID: 1475723715}
+  - {fileID: 1783480739}
+  - {fileID: 1010642118}
+  - {fileID: 434769979}
+  - {fileID: 428118066}
+  m_Father: {fileID: 1422724452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &299301254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299301252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackList: []
+--- !u!114 &299301255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299301252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c022585bb1ccca64eaa0cbb8674b4b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveLeftSpeed: 0
 --- !u!1 &302609663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,6 +2619,119 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+--- !u!1001 &334205040
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 299301253}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &334205041 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 334205040}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &335524890
 GameObject:
   m_ObjectHideFlags: 0
@@ -2273,8 +2763,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackList: []
-  sceneryStartPosition: {x: 0, y: 0, z: 0}
-  sceneryEndPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &335524892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2425,6 +2913,119 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 349175945}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &358671077
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1713693756}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &358671078 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 358671077}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &378932471
 PrefabInstance:
@@ -2586,8 +3187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d08c1f0ecd1a84a48863ce7a53e463ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneryStartPosition: {x: 500, y: 0, z: 0}
-  sceneryEndPosition: {x: -500, y: 0, z: 0}
   sceneryList: []
 --- !u!114 &389807534
 MonoBehaviour:
@@ -2626,7 +3225,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420183310}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c2d7f10deadb444292e363c000e4df9, type: 3}
   m_Name: 
@@ -2649,6 +3248,232 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &428118065
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 299301253}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &428118066 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 428118065}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &434769978
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 299301253}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &434769979 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 434769978}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &448385717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2762,6 +3587,119 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 448385717}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &482234075
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 272102732}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &482234076 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 482234075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &502474875
 GameObject:
   m_ObjectHideFlags: 0
@@ -2793,8 +3731,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackList: []
-  sceneryStartPosition: {x: 0, y: 0, z: 0}
-  sceneryEndPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &502474877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2833,6 +3769,119 @@ Transform:
   - {fileID: 308636340}
   m_Father: {fileID: 1422724452}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &509042886
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 299301253}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &509042887 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 509042886}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -3159,6 +4208,119 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 571806173}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &573133937
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1713693756}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &573133938 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 573133937}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &580912497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3319,8 +4481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d08c1f0ecd1a84a48863ce7a53e463ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneryStartPosition: {x: 500, y: 0, z: 0}
-  sceneryEndPosition: {x: -500, y: 0, z: 0}
   sceneryList: []
 --- !u!114 &589302164
 MonoBehaviour:
@@ -3561,6 +4721,232 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 656313328}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &668780871
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1713693756}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &668780872 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 668780871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &671908151
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1713693756}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &671908152 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 671908151}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &678121869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3787,6 +5173,232 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 679873324}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &686049118
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1713693756}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &686049119 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 686049118}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &687683719
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1713693756}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &687683720 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 687683719}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &729980056
 GameObject:
   m_ObjectHideFlags: 0
@@ -3818,8 +5430,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackList: []
-  sceneryStartPosition: {x: 0, y: 0, z: 0}
-  sceneryEndPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &729980058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3858,6 +5468,119 @@ Transform:
   - {fileID: 1420931688}
   m_Father: {fileID: 1422724452}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &732997068
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 272102732}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &732997069 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 732997068}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &738016458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4063,6 +5786,119 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+--- !u!1001 &742389112
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 272102732}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &742389113 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 742389112}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &752404673
 GameObject:
   m_ObjectHideFlags: 0
@@ -4202,8 +6038,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d08c1f0ecd1a84a48863ce7a53e463ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneryStartPosition: {x: 500, y: 0, z: 0}
-  sceneryEndPosition: {x: -500, y: 0, z: 0}
   sceneryList: []
 --- !u!114 &796380353
 MonoBehaviour:
@@ -4218,69 +6052,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveLeftSpeed: 0
---- !u!1 &805928755
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 805928756}
-  - component: {fileID: 805928757}
-  - component: {fileID: 805928758}
-  m_Layer: 0
-  m_Name: SceneryGroup (0)
-  m_TagString: Scenery
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &805928756
+--- !u!4 &805928756 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7771162995703735918, guid: 076007d07bab7b44da5a5df535f2bbc7, type: 3}
+  m_PrefabInstance: {fileID: 2093761758078661062}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 805928755}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3000, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 236753898}
-  - {fileID: 1514217641}
-  m_Father: {fileID: 869192584}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &805928757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 805928755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c022585bb1ccca64eaa0cbb8674b4b01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveLeftSpeed: 0
---- !u!114 &805928758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 805928755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d08c1f0ecd1a84a48863ce7a53e463ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneryStartPosition: {x: 500, y: 0, z: 0}
-  sceneryEndPosition: {x: -500, y: 0, z: 0}
-  sceneryList: []
 --- !u!1001 &809677994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4554,8 +6330,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d08c1f0ecd1a84a48863ce7a53e463ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneryStartPosition: {x: 500, y: 0, z: 0}
-  sceneryEndPosition: {x: -500, y: 0, z: 0}
   sceneryList: []
 --- !u!114 &833742146
 MonoBehaviour:
@@ -4608,6 +6382,458 @@ Transform:
   - {fileID: 589302162}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &870438950
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1713693756}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &870438951 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 870438950}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &892957391
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1713693756}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &892957392 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 892957391}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &897555940
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 272102732}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &897555941 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 897555940}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &916424501
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 299301253}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &916424502 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 916424501}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &950864327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4813,6 +7039,119 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+--- !u!1001 &1010642117
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 299301253}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &1010642118 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 1010642117}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1013251849 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1419152992, guid: fb82dfb8d1c7044c69afd2486befecb3, type: 3}
@@ -4865,8 +7204,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d08c1f0ecd1a84a48863ce7a53e463ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneryStartPosition: {x: 500, y: 0, z: 0}
-  sceneryEndPosition: {x: -500, y: 0, z: 0}
   sceneryList: []
 --- !u!114 &1026341447
 MonoBehaviour:
@@ -4994,6 +7331,119 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 1038230882}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1040689538
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 272102732}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &1040689539 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 1040689538}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1055406348
 GameObject:
   m_ObjectHideFlags: 0
@@ -5025,8 +7475,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackList: []
-  sceneryStartPosition: {x: 0, y: 0, z: 0}
-  sceneryEndPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &1055406350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5516,6 +7964,119 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 1135886753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1160147890
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 272102732}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &1160147891 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 1160147890}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1163080811
 PrefabInstance:
@@ -6492,6 +9053,119 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 1264126419}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1264135373
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 299301253}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &1264135374 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 1264135373}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1280151196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6686,6 +9360,119 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 1308455072}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1335731413
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 299301253}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &1335731414 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 1335731413}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1380554407
 PrefabInstance:
@@ -6905,6 +9692,9 @@ Transform:
   - {fileID: 1732350417}
   - {fileID: 335524893}
   - {fileID: 729980059}
+  - {fileID: 299301253}
+  - {fileID: 272102732}
+  - {fileID: 1713693756}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1424241768
@@ -7180,8 +9970,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d08c1f0ecd1a84a48863ce7a53e463ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneryStartPosition: {x: 500, y: 0, z: 0}
-  sceneryEndPosition: {x: -500, y: 0, z: 0}
   sceneryList: []
 --- !u!114 &1454314131
 MonoBehaviour:
@@ -7309,6 +10097,119 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 1460358728}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1475723714
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 299301253}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &1475723715 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 1475723714}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1478210941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7422,98 +10323,232 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 1478210941}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1514217640
-GameObject:
+--- !u!1001 &1503990583
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1514217641}
-  - component: {fileID: 1514217645}
-  - component: {fileID: 1514217644}
-  m_Layer: 0
-  m_Name: SceneryRight (0)
-  m_TagString: Scenery
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &1514217641
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1713693756}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &1503990584 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 1503990583}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1514217640}
+--- !u!1001 &1504302558
+PrefabInstance:
+  m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1015}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 805928756}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!154 &1514217644
-TerrainCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1713693756}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &1504302559 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 1504302558}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1514217640}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: 0d91bdcb3c640ea409876d8b73585652, type: 2}
-  m_EnableTreeColliders: 1
---- !u!218 &1514217645
-Terrain:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1514217640}
-  m_Enabled: 1
-  serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 0d91bdcb3c640ea409876d8b73585652, type: 2}
-  m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
-  m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
-  m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 5
-  m_SplatMapDistance: 1000
-  m_HeightmapMaximumLOD: 0
-  m_ShadowCastingMode: 2
-  m_DrawHeightmap: 1
-  m_DrawInstanced: 0
-  m_DrawTreesAndFoliage: 1
-  m_StaticShadowCaster: 0
-  m_IgnoreQualitySettings: 0
-  m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
-  m_BakeLightProbesForTrees: 1
-  m_PreserveTreePrototypeLayers: 0
-  m_DeringLightProbesForTrees: 1
-  m_ReceiveGI: 1
-  m_ScaleInLightmap: 0.0256
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
-  m_GroupingID: 0
-  m_RenderingLayerMask: 1
-  m_AllowAutoConnect: 1
-  m_EnableHeightmapRayTracing: 1
-  m_EnableTreesAndDetailsRayTracing: 0
-  m_TreeMotionVectorModeOverride: 3
 --- !u!1001 &1532010884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8305,6 +11340,119 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 1638159732}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1659473379
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 272102732}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &1659473380 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 1659473379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1712126108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8531,6 +11679,188 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 1713021315}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1713693755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1713693756}
+  - component: {fileID: 1713693758}
+  - component: {fileID: 1713693757}
+  m_Layer: 0
+  m_Name: TrackPlaneGroup (9)
+  m_TagString: Track
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1713693756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713693755}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3000, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 668780872}
+  - {fileID: 892957392}
+  - {fileID: 573133938}
+  - {fileID: 687683720}
+  - {fileID: 358671078}
+  - {fileID: 1504302559}
+  - {fileID: 686049119}
+  - {fileID: 870438951}
+  - {fileID: 671908152}
+  - {fileID: 1503990584}
+  m_Father: {fileID: 1422724452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1713693757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713693755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e701d3db3e0374a99faa58025a9c2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackList: []
+--- !u!114 &1713693758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713693755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c022585bb1ccca64eaa0cbb8674b4b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveLeftSpeed: 0
+--- !u!1001 &1714960902
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 272102732}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &1714960903 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 1714960902}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1732350414
 GameObject:
   m_ObjectHideFlags: 0
@@ -8562,8 +11892,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackList: []
-  sceneryStartPosition: {x: 0, y: 0, z: 0}
-  sceneryEndPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &1732350416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8714,6 +12042,119 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
   m_PrefabInstance: {fileID: 1764598772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1783480738
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 299301253}
+    m_Modifications:
+    - target: {fileID: 276364307575681608, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116648639477855530, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332674674863002725, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798293073896248329, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917626265004262782, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923377766783454443, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954625427436148325, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062711654935976788, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043912893857655053, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448486357635519589, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309928533849442140, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneColumn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_Name
+      value: TrackPlaneRow (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506548226062844840, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 340519830205554688, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 8160645321221240546, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    - {fileID: 1325717540320881146, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+--- !u!4 &1783480739 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3817624213543424019, guid: 5c6e1d350bcaa874bbd83570af2c4da1, type: 3}
+  m_PrefabInstance: {fileID: 1783480738}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1819157516
 PrefabInstance:
@@ -9531,8 +12972,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackList: []
-  sceneryStartPosition: {x: 0, y: 0, z: 0}
-  sceneryEndPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &2069884439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9981,6 +13420,63 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+--- !u!1001 &2093761758078661062
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 869192584}
+    m_Modifications:
+    - target: {fileID: 7771162995703735918, guid: 076007d07bab7b44da5a5df535f2bbc7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771162995703735918, guid: 076007d07bab7b44da5a5df535f2bbc7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771162995703735918, guid: 076007d07bab7b44da5a5df535f2bbc7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771162995703735918, guid: 076007d07bab7b44da5a5df535f2bbc7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771162995703735918, guid: 076007d07bab7b44da5a5df535f2bbc7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771162995703735918, guid: 076007d07bab7b44da5a5df535f2bbc7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771162995703735918, guid: 076007d07bab7b44da5a5df535f2bbc7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771162995703735918, guid: 076007d07bab7b44da5a5df535f2bbc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771162995703735918, guid: 076007d07bab7b44da5a5df535f2bbc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771162995703735918, guid: 076007d07bab7b44da5a5df535f2bbc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8018353652738994612, guid: 076007d07bab7b44da5a5df535f2bbc7, type: 3}
+      propertyPath: m_Name
+      value: SceneryGroup (0)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 076007d07bab7b44da5a5df535f2bbc7, type: 3}
 --- !u!1001 &4591425866898013668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10049,3 +13545,4 @@ SceneRoots:
   - {fileID: 420183312}
   - {fileID: 1422724452}
   - {fileID: 869192584}
+  - {fileID: 97213161}

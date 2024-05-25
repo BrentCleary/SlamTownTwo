@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RepeatBackground : MonoBehaviour
+public class RepeatTrackScript : MonoBehaviour
 {
 
     // Track Positions
-    private Vector3 trackStartPosition = new Vector3 (4000, 0, 0);
+    private Vector3 trackStartPosition = new Vector3 (7000, 0, 0);
     private Vector3 trackEndPosition = new Vector3 (-3000, 0, 0);
-    // Track Transforms
+    // Track Transforms - 10 Tracks Total
     private Transform trackGroup_0;
     private Transform trackGroup_1;
     private Transform trackGroup_2;
@@ -16,6 +16,10 @@ public class RepeatBackground : MonoBehaviour
     private Transform trackGroup_4;
     private Transform trackGroup_5;
     private Transform trackGroup_6;
+    private Transform trackGroup_7;
+    private Transform trackGroup_8;
+    private Transform trackGroup_9;
+
     // Track List 
     public List<Transform> trackList;
 
@@ -31,8 +35,12 @@ public class RepeatBackground : MonoBehaviour
         trackGroup_4 = GameObject.Find("TrackPlaneGroup (4)").GetComponent<Transform>();
         trackGroup_5 = GameObject.Find("TrackPlaneGroup (5)").GetComponent<Transform>();
         trackGroup_6 = GameObject.Find("TrackPlaneGroup (6)").GetComponent<Transform>();
+        trackGroup_7 = GameObject.Find("TrackPlaneGroup (7)").GetComponent<Transform>();
+        trackGroup_8 = GameObject.Find("TrackPlaneGroup (8)").GetComponent<Transform>();
+        trackGroup_9 = GameObject.Find("TrackPlaneGroup (9)").GetComponent<Transform>();
+
         // Track List
-        trackList = new List<Transform>() {trackGroup_0, trackGroup_1, trackGroup_2, trackGroup_3, trackGroup_4, trackGroup_5, trackGroup_6};
+        trackList = new List<Transform>() {trackGroup_0, trackGroup_1, trackGroup_2, trackGroup_3, trackGroup_4, trackGroup_5, trackGroup_6, trackGroup_7, trackGroup_8, trackGroup_9};
 
     }
 

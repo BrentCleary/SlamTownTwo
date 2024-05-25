@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RepeatScenery : MonoBehaviour
+public class RepeatSceneryScript : MonoBehaviour
 {
 
     // scenery Positions
-    private Vector3 sceneryStartPosition = new Vector3 (4000, 0, 0);
+    private Vector3 sceneryStartPosition = new Vector3 (7000, 0, 0);
     private Vector3 sceneryEndPosition = new Vector3 (-3000, 0, 0);
     // scenery Transforms
     private Transform sceneryGroup_0;
@@ -16,6 +16,9 @@ public class RepeatScenery : MonoBehaviour
     private Transform sceneryGroup_4;
     private Transform sceneryGroup_5;
     private Transform sceneryGroup_6;
+    private Transform sceneryGroup_7;
+    private Transform sceneryGroup_8;
+    private Transform sceneryGroup_9;
     // scenery List 
     public List<Transform> sceneryList;
 
@@ -31,9 +34,13 @@ public class RepeatScenery : MonoBehaviour
         sceneryGroup_4 = GameObject.Find("SceneryGroup (4)").GetComponent<Transform>();
         sceneryGroup_5 = GameObject.Find("SceneryGroup (5)").GetComponent<Transform>();
         sceneryGroup_6 = GameObject.Find("SceneryGroup (6)").GetComponent<Transform>();
+        sceneryGroup_7 = GameObject.Find("SceneryGroup (7)").GetComponent<Transform>();
+        sceneryGroup_8 = GameObject.Find("SceneryGroup (8)").GetComponent<Transform>();
+        sceneryGroup_9 = GameObject.Find("SceneryGroup (9)").GetComponent<Transform>();
+
 
         // Scenery List
-        sceneryList = new List<Transform>() {sceneryGroup_0, sceneryGroup_1, sceneryGroup_2, sceneryGroup_3, sceneryGroup_4, sceneryGroup_5, sceneryGroup_6};
+        sceneryList = new List<Transform>() {sceneryGroup_0, sceneryGroup_1, sceneryGroup_2, sceneryGroup_3, sceneryGroup_4, sceneryGroup_5, sceneryGroup_6, sceneryGroup_7, sceneryGroup_8, sceneryGroup_9};
 
     }
 
@@ -60,7 +67,7 @@ public class RepeatScenery : MonoBehaviour
             if(transform.position.x < sceneryEndPosition.x)
             {
                 transform.position = sceneryStartPosition;
-                Debug.Log(sceneryGroup_0 + " reset at " + transform.position);
+                Debug.Log(gameObject.name + " reset at " + transform.position);
             }
         }
         

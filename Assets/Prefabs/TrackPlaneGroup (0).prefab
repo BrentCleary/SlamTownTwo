@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5512056363015477176}
   - component: {fileID: 2820618575797535478}
-  - component: {fileID: 4256761889562626927}
+  - component: {fileID: 9112368038945719072}
   m_Layer: 0
   m_Name: TrackPlaneGroup (0)
   m_TagString: Track
@@ -56,7 +56,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveLeftSpeed: 0
---- !u!114 &4256761889562626927
+--- !u!114 &9112368038945719072
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -69,8 +69,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackList: []
-  sceneryStartPosition: {x: 0, y: 0, z: 0}
-  sceneryEndPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &1063141645341961133
 PrefabInstance:
   m_ObjectHideFlags: 0
