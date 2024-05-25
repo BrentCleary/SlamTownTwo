@@ -20,17 +20,9 @@ public class RepeatBackground : MonoBehaviour
     public List<Transform> trackList;
 
 
-    // Scenery Positions
-    public Vector3 sceneryStartPosition = new Vector3 (500, 0, 0);
-    public Vector3 sceneryEndPosition = new Vector3 (-500, 0, 0);
-    // Scenery Transforms
-    private Transform sceneryGroup_0;
-
-
     // Start is called before the first frame update
     void Start()
     {
-        
         // Track GameObjects
         trackGroup_0 = GameObject.Find("TrackPlaneGroup (0)").GetComponent<Transform>();
         trackGroup_1 = GameObject.Find("TrackPlaneGroup (1)").GetComponent<Transform>();
@@ -41,10 +33,6 @@ public class RepeatBackground : MonoBehaviour
         trackGroup_6 = GameObject.Find("TrackPlaneGroup (6)").GetComponent<Transform>();
         // Track List
         trackList = new List<Transform>() {trackGroup_0, trackGroup_1, trackGroup_2, trackGroup_3, trackGroup_4, trackGroup_5, trackGroup_6};
-
-        // Scenery GameObjects
-        sceneryGroup_0 = GameObject.Find("SceneryGroup (0)").GetComponent<Transform>();
-        // sceneryGroup_1 = GameObject.Find("SceneryGroup (1)").GetComponent<Transform>();
 
     }
 
