@@ -16,6 +16,8 @@ public class SpawnManager : MonoBehaviour
     // Spawn Position
     // private Vector3 spawnPos = new Vector3(0, 0, 0);
     private Vector3 spawnPos;
+    public bool spawnPosRandomizerOn = false;
+
 
     // SpawnObstacle Variables
     private float startDelay = 1f;
@@ -46,10 +48,20 @@ public class SpawnManager : MonoBehaviour
         
         int obstacleIndex = UnityEngine.Random.Range(0, obstaclePrefabs.Length);
 
+
         if(playerControllerScript.gameOver == false)
         {
-            Instantiate(obstaclePrefabs[obstacleIndex], spawnPos, obstaclePrefabs[obstacleIndex].transform.rotation);
-            Debug.Log("Spawning " + obstaclePrefabs[obstacleIndex].name);
+            if(spawnPosRandomizerOn == true)
+            {
+                Instantiate(obstaclePrefabs[obstacleIndex], SpawnPositionRandomizer(), obstaclePrefabs[obstacleIndex].transform.rotation);
+                Debug.Log("Spawning " + obstaclePrefabs[obstacleIndex].name);
+            }
+            else if (spawnPosRandomizerOn == false)
+            {
+                Instantiate(obstaclePrefabs[obstacleIndex], spawnPos, obstaclePrefabs[obstacleIndex].transform.rotation);
+                Debug.Log("Spawning " + obstaclePrefabs[obstacleIndex].name);
+            }
+
         }
     }
 

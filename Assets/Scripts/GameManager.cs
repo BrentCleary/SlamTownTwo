@@ -62,4 +62,9 @@ public class GameManager : MonoBehaviour
             gameSpeed -= dragAirValue * Time.time * Time.deltaTime;
         }
     }
+
+    // A function to check when 
+
+
+
 }
